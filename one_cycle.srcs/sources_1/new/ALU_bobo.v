@@ -62,16 +62,19 @@ module ALU_bobo(
             end
             4'd2:
             begin
+            // logic right
                 R = X >> Y;
             end
             4'd3:
             begin
+            //multiply
                 tmp = X*Y;
                 R = tmp[31:0];
                 R2 = tmp[63:32]; 
             end
             4'd4:
             begin
+            //divide
                 if(Y == 0)
                 begin
                     R = 0;
@@ -84,11 +87,52 @@ module ALU_bobo(
             end
             4'd5:
             begin
+            //add
                 {CF, R} = X + Y;
                 Sum_sign = R[31];
                 X_sign = X[31];
                 Y_sign = Y[31];
-                //OF = (X_sign == Y_Sign)?(Sum_sign == X_sign ? 0:1):0;
+                OF = (X_sign == Y_sign)?(Sum_sign == X_sign ? 0:1):0;
+            end
+            4'd6:
+            begin
+            //sub
+                {CF, R} = X - Y;
+                Sum_sign = R[31];
+                X_sign = X[31];
+                Y_sign = Y[31];
+                OF = (X_sign == Y_sign)?(Sum_sign == X_sign ? 0:1):0;
+            end
+            4'd7:
+            begin
+            //and
+                R = X & Y;
+            end
+            4'd8:
+            begin
+            //or
+                R = X | Y;
+            end
+            4'd9:
+            begin
+            //xor
+                R = X ^ Y;
+            end
+            4'd10:
+            begin
+                R = ~(X | Y);
+            end
+            4'd11:
+            begin
+                R = ($signed(X) < $signed(Y))?1:0;
+            end
+            4'd12:
+            begin
+                R = (X < Y)?1:0;
+            end
+            default:
+            begin
+                R = 0;
             end
          endcase
      end

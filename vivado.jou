@@ -9,3 +9,153 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/UART/lab1/one_cycle/one_cycle.xpr
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+save_wave_config {C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg}
+add_files -fileset sim_1 -norecurse C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+set_property xsim.view C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+source ALU_tb.tcl
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v w ]
+add_files C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v w ]
+add_files -fileset sim_1 C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top PC_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+source PC_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+source PC_tb.tcl
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+close_sim
+launch_simulation
+open_wave_config C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+source PC_tb.tcl
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+close_sim
+launch_simulation
+source PC_tb.tcl
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v w ]
+add_files C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v w ]
+add_files -fileset sim_1 C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source IM_tb.tcl
+close_sim
+launch_simulation
+source IM_tb.tcl
+import_files -norecurse C:/UART/lab1/one_cycle/benchmark.txt
+close_sim
+launch_simulation
+source IM_tb.tcl
+close_sim
+launch_simulation
+source IM_tb.tcl
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v w ]
+add_files C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v w ]
+add_files -fileset sim_1 C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source DM_tb.tcl
+close_sim
+launch_simulation
+source DM_tb.tcl
+close_sim
+launch_simulation
+source DM_tb.tcl
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v w ]
+add_files C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v w ]
+add_files -fileset sim_1 C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Instr_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source Instr_tb.tcl
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v w ]
+add_files C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v w ]
+add_files -fileset sim_1 C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SignExtend_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source SignExtend_tb.tcl
