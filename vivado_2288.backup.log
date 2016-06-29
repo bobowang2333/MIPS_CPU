@@ -1,0 +1,486 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Jun 29 10:59:07 2016
+# Process ID: 948
+# Log file: C:/UART/lab1/one_cycle/vivado.log
+# Journal file: C:/UART/lab1/one_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/UART/lab1/one_cycle/one_cycle.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 502.137 ; gain = 58.133
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ClkDiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ClkDiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ClkDiv_tb_behav xil_defaultlib.ClkDiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.ClkDiv_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot ClkDiv_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 11:01:19 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 59.988 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 11:01:19 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 529.223 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClkDiv_tb_behav -key {Behavioral:sim_1:Functional:ClkDiv_tb} -tclbatch {ClkDiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ClkDiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClkDiv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 530.762 ; gain = 1.539
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 562.730 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ClkDiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ClkDiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ClkDiv_tb_behav xil_defaultlib.ClkDiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.ClkDiv_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot ClkDiv_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 11:10:24 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 59.984 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 11:10:24 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 562.730 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClkDiv_tb_behav -key {Behavioral:sim_1:Functional:ClkDiv_tb} -tclbatch {ClkDiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ClkDiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClkDiv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 571.270 ; gain = 8.539
+run 10 us
+run 100 us
+run 10 ms
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 578.766 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 578.766 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ClkDiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ClkDiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ClkDiv_tb_behav xil_defaultlib.ClkDiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.ClkDiv_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot ClkDiv_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 13:48:48 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 60.047 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 13:48:48 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 578.766 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClkDiv_tb_behav -key {Behavioral:sim_1:Functional:ClkDiv_tb} -tclbatch {ClkDiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ClkDiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClkDiv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 578.766 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 579.848 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ClkDiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ClkDiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ClkDiv_tb_behav xil_defaultlib.ClkDiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.ClkDiv_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ClkDiv_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 13:51:25 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 60.039 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 13:51:25 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 579.848 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClkDiv_tb_behav -key {Behavioral:sim_1:Functional:ClkDiv_tb} -tclbatch {ClkDiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ClkDiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClkDiv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 579.848 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 579.848 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ClkDiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ClkDiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ClkDiv_tb_behav xil_defaultlib.ClkDiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.ClkDiv_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ClkDiv_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 13:53:54 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 59.996 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 13:53:54 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 579.848 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClkDiv_tb_behav -key {Behavioral:sim_1:Functional:ClkDiv_tb} -tclbatch {ClkDiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ClkDiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClkDiv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 579.848 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 586.359 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ClkDiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ClkDiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ClkDiv_tb_behav xil_defaultlib.ClkDiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.ClkDiv_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ClkDiv_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 14:08:23 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 60.004 ; gain = 0.047
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 14:08:23 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 586.359 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClkDiv_tb_behav -key {Behavioral:sim_1:Functional:ClkDiv_tb} -tclbatch {ClkDiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ClkDiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClkDiv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 586.359 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 606.168 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ClkDiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ClkDiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ClkDiv_tb_behav xil_defaultlib.ClkDiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.ClkDiv_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ClkDiv_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 14:11:56 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 59.996 ; gain = 0.043
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 14:11:56 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 606.168 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClkDiv_tb_behav -key {Behavioral:sim_1:Functional:ClkDiv_tb} -tclbatch {ClkDiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ClkDiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClkDiv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 606.168 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 606.168 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 29 14:15:19 2016...

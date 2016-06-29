@@ -1,0 +1,261 @@
+
+*** Running vivado
+    with args -log ClkDiv.vds -m64 -mode batch -messageDb vivado.pb -notrace -source ClkDiv.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source ClkDiv.tcl -notrace
+Command: synth_design -top ClkDiv -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+WARNING: [Synth 8-2611] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 271.742 ; gain = 96.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ClkDiv' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
+	Parameter Divider bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (1#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 287.605 ; gain = 112.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 287.605 ; gain = 112.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 287.605 ; gain = 112.266
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "ClkOutput" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 303.203 ; gain = 127.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ClkDiv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 418.391 ; gain = 243.051
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "ClkOutput" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 420.934 ; gain = 245.594
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 420.934 ; gain = 245.594
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[31] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[30] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[29] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[28] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[27] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[26] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[25] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[24] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[23] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[22] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[21] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[20] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[19] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[18] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[17] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[16] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[15] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[14] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[13] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[12] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[11] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[10] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[9] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[8] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[7] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[6] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[5] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[4] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[3] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[2] ) is unused and will be removed from module ClkDiv.
+WARNING: [Synth 8-3332] Sequential element (\count_reg[1] ) is unused and will be removed from module ClkDiv.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 430.555 ; gain = 255.215
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 430.555 ; gain = 255.215
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 430.555 ; gain = 255.215
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 430.555 ; gain = 255.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 440.258 ; gain = 264.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.258 ; gain = 264.918
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.258 ; gain = 264.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.258 ; gain = 264.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.258 ; gain = 264.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.258 ; gain = 264.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     1|
+|4     |FDCE |     2|
+|5     |IBUF |     2|
+|6     |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     9|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.258 ; gain = 264.918
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 440.258 ; gain = 232.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.258 ; gain = 264.918
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 510.004 ; gain = 302.336
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 510.004 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 29 18:11:06 2016...

@@ -1,0 +1,1178 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Jun 29 16:49:00 2016
+# Process ID: 2288
+# Log file: C:/UART/lab1/one_cycle/vivado.log
+# Journal file: C:/UART/lab1/one_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/UART/lab1/one_cycle/one_cycle.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 503.258 ; gain = 69.066
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ClkDiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ClkDiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ClkDiv_tb_behav xil_defaultlib.ClkDiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.ClkDiv_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ClkDiv_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 16:50:13 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 60.000 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 16:50:13 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 507.285 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClkDiv_tb_behav -key {Behavioral:sim_1:Functional:ClkDiv_tb} -tclbatch {ClkDiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ClkDiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClkDiv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 521.129 ; gain = 13.844
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 543.789 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ClkDiv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ClkDiv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ClkDiv_tb_behav xil_defaultlib.ClkDiv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.ClkDiv_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot ClkDiv_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ClkDiv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 16:54:13 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 60.004 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 16:54:13 2016...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 543.789 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClkDiv_tb_behav -key {Behavioral:sim_1:Functional:ClkDiv_tb} -tclbatch {ClkDiv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ClkDiv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClkDiv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 543.789 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v w ]
+add_files -fileset sim_1 C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <ALU> not found while processing module instance <alu_test> [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:33]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log' file for more information.
+set_property is_enabled true [get_files  C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v]
+update_compile_order -fileset sim_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU.v" into library work [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU.v:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "else". [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU.v:39]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "case". [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU.v:50]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library work [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:1]
+[Wed Jun 29 17:21:41 2016] Launched synth_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log
+launch_runs impl_1
+[Wed Jun 29 17:23:05 2016] Launched impl_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+remove_files C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU.v
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v w ]
+add_files C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v
+update_compile_order -fileset sources_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port X [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:34]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port Y [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:35]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port S [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:36]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R2 [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 60.004 ; gain = 0.039
+
+    while executing
+"webtalk_transmit -clientid 2630851365 -regid "211058156_0_0_120" -xml C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/u..."
+    (file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 17:30:24 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 598.254 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 600.555 ; gain = 2.301
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 622.563 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:36]
+ERROR: [VRFC 10-91] Y_Sign is not declared [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:79]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:36]
+ERROR: [VRFC 10-91] Y_Sign is not declared [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:79]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:36]
+ERROR: [VRFC 10-91] Y_Sign is not declared [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:79]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library work [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library work [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:1]
+[Wed Jun 29 18:10:49 2016] Launched synth_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R2 [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 59.996 ; gain = 0.051
+
+    while executing
+"webtalk_transmit -clientid 133435406 -regid "211058156_0_0_120" -xml C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/us..."
+    (file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 18:12:20 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 622.563 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 622.563 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 622.563 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:36]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:39]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R2 [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 18:23:08 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 59.984 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 18:23:08 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 625.781 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 635.695 ; gain = 9.914
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 635.695 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R2 [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 60.004 ; gain = 0.031
+
+    while executing
+"webtalk_transmit -clientid 2972190972 -regid "211058156_0_0_120" -xml C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/u..."
+    (file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 18:24:15 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 635.695 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 635.695 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 635.695 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R2 [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 18:25:26 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 60.039 ; gain = 0.043
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 18:25:26 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 635.695 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 635.695 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 635.695 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:39]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:39]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:87]
+ERROR: [VRFC 10-91] Y_Sign is not declared [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:90]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R2 [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 60.055 ; gain = 0.039
+
+    while executing
+"webtalk_transmit -clientid 2607167643 -regid "211058156_0_0_120" -xml C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/u..."
+    (file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 18:36:58 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 635.695 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 635.695 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 635.695 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:87]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:87]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R2 [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 29 18:41:10 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 60.051 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 29 18:41:10 2016...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 635.695 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_tb_behav -key {Behavioral:sim_1:Functional:ALU_tb} -tclbatch {ALU_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source ALU_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 635.695 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 635.695 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:87]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+ERROR: [VRFC 10-433] cannot index into non-array R [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:87]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-143] R was previously declared with a range [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port R2 [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 635.695 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+1
+    while executing
+"catch {rdi::run_program $scr_file} error_log"
+    (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)
+    invoked from within
+"::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"
+    (procedure "tclapp::xilinx::xsim::elaborate" line 13)
+    invoked from within
+"tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..."
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 635.695 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-1315] redeclaration of ansi port R is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-344] 'run_program' was cancelled
+1
+    while executing
+"catch {rdi::run_program $scr_file} error_log"
+    (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)
+    invoked from within
+"::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"
+    (procedure "tclapp::xilinx::xsim::elaborate" line 13)
+    invoked from within
+"tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..."
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 663.855 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-1315] redeclaration of ansi port R is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:33]
+ERROR: [VRFC 10-91] Y_Sign is not declared [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:91]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-1315] redeclaration of ansi port R is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:33]
+ERROR: [VRFC 10-91] Y_Sign is not declared [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:92]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+WARNING: [VRFC 10-1315] redeclaration of ansi port OF is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:32]
+WARNING: [VRFC 10-1315] redeclaration of ansi port R is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:33]
+ERROR: [VRFC 10-91] Y_Sign is not declared [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:92]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+ERROR: [VRFC 10-91] Y_Sign is not declared [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:91]
+ERROR: [VRFC 10-1040] module ALU_bobo ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/ClkDiv_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 4 sub-compilation(s) to finish...
+Built simulation snapshot ALU_tb_behav
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/ALU_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-344] 'run_program' was cancelled
+1
+    while executing
+"catch {rdi::run_program $scr_file} error_log"
+    (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)
+    invoked from within
+"::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"
+    (procedure "tclapp::xilinx::xsim::elaborate" line 13)
+    invoked from within
+"tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..."
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 672.703 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled

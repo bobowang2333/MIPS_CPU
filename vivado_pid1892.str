@@ -1,0 +1,74 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 1892
+
+Current time: 	6/29/16 8:20:53 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 1
+
+Screen size: 1707x1067
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	bobobo
+User directory: C:/UART/lab1/one_cycle
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/bobobo/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/bobobo/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	122 MB
+GUI max memory:		3,066 MB
+Engine allocated memory: 362 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 5.3s
+// Tcl Message: start_gui 
+// [GUI Memory]: 68 MB (+69211kb) [00:00:25]
+// [Engine Memory]: 331 MB (+195865kb) [00:00:25]
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\UART\lab1\one_cycle\one_cycle.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 380 MB (+34245kb) [00:00:32]
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 385 MB. GUI used memory: 32 MB. Current time: 6/29/16 8:20:57 PM CST
+// [Engine Memory]: 427 MB (+28582kb) [00:00:38]
+// [GUI Memory]: 77 MB (+4961kb) [00:00:40]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/UART/lab1/one_cycle/one_cycle.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// [GUI Memory]: 85 MB (+5353kb) [00:00:50]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 450 MB (+1599kb) [00:01:00]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: one_cycle; location: C:/UART/lab1/one_cycle; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 504.773 ; gain = 70.785 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 450 MB. GUI used memory: 50 MB. Current time: 6/29/16 8:21:26 PM CST
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 464 MB. GUI used memory: 35 MB. Current time: 6/29/16 8:21:32 PM CST

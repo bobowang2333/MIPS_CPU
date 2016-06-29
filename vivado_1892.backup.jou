@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Jun 29 16:49:00 2016
+# Process ID: 2288
+# Log file: C:/UART/lab1/one_cycle/vivado.log
+# Journal file: C:/UART/lab1/one_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/UART/lab1/one_cycle/one_cycle.xpr
+launch_simulation
+source ClkDiv_tb.tcl
+close_sim
+launch_simulation
+source ClkDiv_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v w ]
+add_files -fileset sim_1 C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+set_property is_enabled true [get_files  C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v]
+update_compile_order -fileset sim_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+remove_files C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU.v
+close [ open C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v w ]
+add_files C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v
+update_compile_order -fileset sources_1
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source ALU_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
