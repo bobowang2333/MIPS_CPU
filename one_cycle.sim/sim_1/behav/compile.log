@@ -35,7 +35,9 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sr
 INFO: [VRFC 10-311] analyzing module Display_Digit
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module One_Cycle
-WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:243]
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:34]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:245]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:132]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MUX3_8
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib

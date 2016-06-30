@@ -12187,3 +12187,1132 @@ selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:
 // Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
 // 'c' command handler elapsed time: 5 seconds
 dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// Elapsed time: 327 seconds
+selectCodeEditor("One_Cycle.v", 310, 590); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2_4_5bit (MUX2_4_5bit.v)]", 3, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2_4_5bit (MUX2_4_5bit.v)]", 3, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX2_4_5bit (MUX2_4_5bit.v)]", 3, false); // A:k (H:JPanel, cl:JFrame)
+selectCodeEditor("MUX2_4_5bit.v", 55, 381); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "MUX2_4_5bit.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2_4_5bit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("One_Cycle.v", 242, 580); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("One_Cycle.v", 106, 498); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 179, 465); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("One_Cycle.v", 150, 485); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 90, 506); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("ControlUnit.v", 166, 301); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 151, 277); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 166, 500); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("One_Cycle.v", 213, 41); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 283, 281); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 477); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 43 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_FIND_IN_FILES, "Find in Files..."); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_FIND_IN_FILES
+// Find in Files: addNotify
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "Instruction", -1); // JComboBox:JComponent (JPanel:JComponent, a:FindAndReplaceDialog)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // g:a (ButtonPanel:JPanel, a:FindAndReplaceDialog)
+// cp:P (cl:JFrame):  Find in Files : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 106 MB. Current time: 6/30/16 11:51:39 PM CST
+// 'f' command handler elapsed time: 8 seconds
+dismissDialog("Find in Files"); // cp:P (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 103 MB. Current time: 6/30/16 11:51:40 PM CST
+expandTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT]", 2); // E:k (JViewport:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [1325, 1336]]", 3, false); // E:k (JViewport:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [1525, 1536]]", 4, false); // E:k (JViewport:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [1525, 1536]]", 4, false, false, false, false, false, true); // E:k (JViewport:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [2382, 2393]]", 6, false); // E:k (JViewport:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [2382, 2393]]", 6, false, false, false, false, false, true); // E:k (JViewport:JComponent, cl:JFrame) - Double Click
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [2382, 2393]]", 6, false); // E:k (JViewport:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 324, 479); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("One_Cycle.v", 102, 513); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("One_Cycle.v", 102, 539); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 545); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 118, 468); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 100, 573); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 100, 572); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 100, 572); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 572); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 583); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 58 seconds
+selectCodeEditor("One_Cycle.v", 102, 583); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 37 seconds
+selectCodeEditor("One_Cycle.v", 119, 208); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 569); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, d:cp)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled 
+// Tcl Message: 1     while executing "catch {rdi::run_program $scr_file} error_log"     (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)     invoked from within "::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"     (procedure "tclapp::xilinx::xsim::elaborate" line 13)     invoked from within "tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..." 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectCodeEditor("One_Cycle.v", 55, 589); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("One_Cycle.v", 144, 376); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 155, 585); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 240, 587); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX1_2_5bit (MUX1_2_5bit.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX1_2_5bit (MUX1_2_5bit.v)]", 2, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX1_2_5bit (MUX1_2_5bit.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectCodeEditor("MUX1_2_5bit.v", 55, 381); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "MUX1_2_5bit.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX1_2_5bit.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("One_Cycle.v", 268, 589); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX1_2_5bit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX1_2_5bit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 102, 516); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 531); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("One_Cycle.v", 104, 555); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 119, 484); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 107, 552); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 107, 575); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 200, 464); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 312, 471); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 107, 641); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, d:cp)
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled 
+// Tcl Message: 1     while executing "catch {rdi::run_program $scr_file} error_log"     (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)     invoked from within "::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"     (procedure "tclapp::xilinx::xsim::elaborate" line 13)     invoked from within "tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..." 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectCodeEditor("One_Cycle.v", 76, 584); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 146, 465); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 164, 640); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 49 seconds
+selectCodeEditor("One_Cycle.v", 23, 432); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 118, 519); // bj:J (JPanel:JComponent, cl:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v)]", 1); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v), ext_choose - MUX2_4 (MUX2_4.v)]", 16, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v), ext_choose - MUX2_4 (MUX2_4.v)]", 16, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("MUX2_4.v", 48, 381); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("MUX2_4.v", 181, 356); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2_4.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v), rf_r1_choose - MUX2_4_5bit (MUX2_4_5bit.v)]", 19, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v), rf_r1_choose - MUX2_4_5bit (MUX2_4_5bit.v)]", 19, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("MUX2_4_5bit.v", 51, 379); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "MUX2_4_5bit.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2_4_5bit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 24, 585); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 271, 585); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 47 seconds
+selectCodeEditor("One_Cycle.v", 104, 485); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("One_Cycle.v", 106, 480); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 99, 503); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 108, 501); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 488); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 503); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 102, 520); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 535); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 517); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 491); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 511); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 107, 481); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 499); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 102, 529); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 102, 519); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 531); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 102, 548); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 484); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("Instr_Splitter.v", 199, 551); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Instr_Splitter.v", 212, 576); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Instr_Splitter.v", 238, 576); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Instr_Splitter.v", 238, 529); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Instr_Splitter.v", 232, 600); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 232, 72); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 481); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("One_Cycle.v", 195, 483); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 503); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 524); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("One_Cycle.v", 108, 532); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 549); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 112, 431); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 99, 556); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 107, 552); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 571); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 112, 313); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 256, 393); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 565); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, d:cp)
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled 
+// Tcl Message: 1     while executing "catch {rdi::run_program $scr_file} error_log"     (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)     invoked from within "::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"     (procedure "tclapp::xilinx::xsim::elaborate" line 13)     invoked from within "tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..." 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// Elapsed time: 46 seconds
+selectCodeEditor("One_Cycle.v", 63, 552); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 124, 333); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 70, 331); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 68, 331); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 90, 567); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 90, 567); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 184, 561); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 128, 332); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 182, 576); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("One_Cycle.v", 120, 345); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 127, 333); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 188, 576); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("ControlUnit.v", 212, 96); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ControlUnit.v", 256, 97); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ControlUnit.v", 152, 377); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("ControlUnit.v", 167, 379); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 175, 575); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 208, 128); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 195, 579); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 191, 569); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 178, 576); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("One_Cycle.v", 91, 595); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("One_Cycle.v", 208, 600); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("One_Cycle.v", 208, 601); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 102, 616); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 144, 43); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 223, 616); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v), ext_choose - MUX2_4 (MUX2_4.v)]", 16, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v), ext_choose - MUX2_4 (MUX2_4.v)]", 16, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("MUX2_4.v", 54, 381); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "MUX2_4.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2_4.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("One_Cycle.v", 178, 605); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("One_Cycle.v", 104, 496); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("One_Cycle.v", 120, 124); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 107, 508); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 107, 516); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("One_Cycle.v", 127, 329); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 344, 368); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 511); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("One_Cycle.v", 103, 331); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 302, 331); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 98, 513); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 303, 543); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 110, 540); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 537); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 544); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 100, 573); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 100, 572); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 206, 456); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 569); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 585); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("One_Cycle.v", 104, 404); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 311, 416); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 103, 583); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, d:cp)
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled 
+// Tcl Message: 1     while executing "catch {rdi::run_program $scr_file} error_log"     (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)     invoked from within "::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"     (procedure "tclapp::xilinx::xsim::elaborate" line 13)     invoked from within "tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..." 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectCodeEditor("One_Cycle.v", 71, 608); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 61 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("ControlUnit.v", 111, 231); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 199, 436); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 168, 609); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 95 seconds
+selectCodeEditor("One_Cycle.v", 195, 609); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("One_Cycle.v", 108, 548); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 328); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 102, 500); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 517); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("One_Cycle.v", 127, 160); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 352, 299); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 100, 521); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 108, 519); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 107, 533); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 172, 435); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("One_Cycle.v", 128, 137); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 144, 140); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 144, 140); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 102, 181); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 138, 68); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 132, 55); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 170, 63); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 302, 128); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 74, 433); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 382, 465); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 124, 480); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 50 seconds
+selectCodeEditor("One_Cycle.v", 78, 445); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 107, 537); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 106, 501); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 102, 549); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 564); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 112, 397); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 561); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("One_Cycle.v", 90, 261); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 322, 321); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 579); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 99 MB. Current time: 7/1/16 12:21:43 AM CST
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, d:cp)
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled 
+// Tcl Message: 1     while executing "catch {rdi::run_program $scr_file} error_log"     (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)     invoked from within "::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"     (procedure "tclapp::xilinx::xsim::elaborate" line 13)     invoked from within "tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..." 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("One_Cycle.v", 47, 603); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 155, 387); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 170, 629); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("One_Cycle.v", 16, 428); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 108, 565); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 64, 603); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 36, 601); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 34, 517); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 130, 516); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("One_Cycle.v", 191, 351); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 208, 531); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 178, 193); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 162, 531); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("One_Cycle.v", 210, 557); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("One_Cycle.v", 170, 565); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 180, 584); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, d:cp)
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled 
+// Tcl Message: 1     while executing "catch {rdi::run_program $scr_file} error_log"     (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)     invoked from within "::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"     (procedure "tclapp::xilinx::xsim::elaborate" line 13)     invoked from within "tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..." 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// Elapsed time: 318 seconds
+selectCodeEditor("One_Cycle.v", 80, 607); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 40 seconds
+selectCodeEditor("One_Cycle.v", 65, 176); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 161, 602); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("One_Cycle.v", 185, 94); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 65, 93); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 82, 114); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 305, 604); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 265, 592); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 90, 598); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 154, 568); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("One_Cycle.v", 61, 481); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 75, 604); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 94, 592); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 270, 498); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 127, 602); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 266, 608); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 254, 618); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("One_Cycle.v", 99, 602); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("One_Cycle.v", 218, 312); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 367, 310); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("One_Cycle.v", 97, 608); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("One_Cycle.v", 181, 573); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 161, 580); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 159, 590); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 151, 597); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("One_Cycle.v", 122, 469); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("One_Cycle.v", 423, 313); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("One_Cycle.v", 137, 525); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectCodeEditor("One_Cycle.v", 131, 542); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 133, 551); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 111, 551); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 157, 435); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 169, 569); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 80 seconds
+selectCodeEditor("One_Cycle.v", 65, 246); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 73, 529); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectCodeEditor("One_Cycle.v", 66, 547); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 55, 557); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("One_Cycle.v", 42, 281); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 38, 287); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 34, 301); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, d:cp)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled 
+// Tcl Message: 1     while executing "catch {rdi::run_program $scr_file} error_log"     (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)     invoked from within "::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"     (procedure "tclapp::xilinx::xsim::elaborate" line 13)     invoked from within "tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..." 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectCodeEditor("One_Cycle.v", 67, 511); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 67, 487); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 144 seconds
+selectCodeEditor("One_Cycle.v", 726, 286); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("One_Cycle.v", 78, 506); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("One_Cycle.v", 113, 242); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 82, 522); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("ControlUnit.v", 225, 215); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 117, 487); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 175, 418); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 41 seconds
+selectCodeEditor("One_Cycle.v", 318, 398); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 318, 415); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("One_Cycle.v", 71, 223); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 81, 433); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("ControlUnit.v", 169, 113); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ControlUnit.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 186, 157); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 171, 437); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 134 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, d:cp)
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled 
+// Tcl Message: 1     while executing "catch {rdi::run_program $scr_file} error_log"     (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)     invoked from within "::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"     (procedure "tclapp::xilinx::xsim::elaborate" line 13)     invoked from within "tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..." 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 106 MB. Current time: 7/1/16 12:51:44 AM CST
+// Elapsed time: 401 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, OneCycle_tb (OneCycle_tb.v)]", 29, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, OneCycle_tb (OneCycle_tb.v)]", 29, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectCodeEditor("OneCycle_tb.v", 159, 465, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectCodeEditor("OneCycle_tb.v", 93, 538); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "OneCycle_tb.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 119, 501); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 115, 522); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 118, 533); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 126, 553); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 118, 569); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 60.016 ; gain = 0.031      while executing "webtalk_transmit -clientid 2084721752 -regid "211058156_0_0_120" -xml C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webt..."     (file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl" line 41) INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 00:54:22 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// 'c' command handler elapsed time: 18 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 93, -82); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 106 MB. Current time: 7/1/16 12:54:29 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 138, -9); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 71, 5); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 104 MB. Current time: 7/1/16 12:54:35 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 95 MB. Current time: 7/1/16 12:54:42 AM CST
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 27, 93); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 96 MB. Current time: 7/1/16 12:54:47 AM CST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 97 MB. Current time: 7/1/16 12:54:58 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 97 MB. Current time: 7/1/16 12:54:59 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 95 MB. Current time: 7/1/16 12:54:59 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 95 MB. Current time: 7/1/16 12:55:00 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 95 MB. Current time: 7/1/16 12:55:00 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 95 MB. Current time: 7/1/16 12:55:01 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 289, 65); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 95 MB. Current time: 7/1/16 12:55:04 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 265, 94); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb.v", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("One_Cycle.v", 66, 373); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 66, 383); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("One_Cycle.v", 159, 365); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb.v", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 62, 363); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 141, 171); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 111, 165); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 114, 330); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 143, 334); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab((HResource) null, (HResource) null, "Sources", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 24", 6); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 24"); // E:w
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Elapsed time: 12 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message:  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:      while executing "webtalk_transmit -clientid 1303209676 -regid "211058156_0_0_120" -xml C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webt..."     (file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl" line 41) INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 00:57:55 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// 'c' command handler elapsed time: 25 seconds
+// Elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 74, 33); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 102 MB. Current time: 7/1/16 12:58:01 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 77, -222); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 101 MB. Current time: 7/1/16 12:58:09 AM CST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 103 MB. Current time: 7/1/16 12:58:20 AM CST
+// Elapsed time: 20 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 154, 3); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 97 MB. Current time: 7/1/16 12:58:24 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 105, 44); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 271, 113); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 337, 42); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 97 MB. Current time: 7/1/16 12:58:37 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 380, 47); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 476, 35); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2_4_5bit.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 25"); // E:w
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX2_4_5bit.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instr_Splitter.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 137, 381); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 130, 431); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 161, 431); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 174, 431); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 5); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("OneCycle_tb.v", 232, 513); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Elapsed time: 12 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message:  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 60.102 ; gain = 0.031      while executing "webtalk_transmit -clientid 627013613 -regid "211058156_0_0_120" -xml C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webta..."     (file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl" line 41) INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 01:00:17 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 905.914 ; gain = 0.000 
+// 'c' command handler elapsed time: 26 seconds
+// Elapsed time: 14 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)

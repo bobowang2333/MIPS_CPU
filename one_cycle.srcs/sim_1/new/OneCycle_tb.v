@@ -26,8 +26,7 @@ module OneCycle_tb(
     reg reset;
     reg [2:0] digit_control;
     wire SyscallDisplay;
-    wire ClkEn;
-    wire RF_D2;
+    wire CLK;
     wire DigitEn;//choose which digit shine
     wire DigitOut;
     
@@ -37,9 +36,22 @@ module OneCycle_tb(
         .reset(reset),
         .digit_control(digit_control),
         .SyscallDisplay(SyscallDisplay),
-        .ClkEn(ClkEn),
-        .RF_D2(RF_D2),
+        .CLK(CLK),
         .DigitEn(DigitEn),
         .DigitOut(DigitOut)
      );
+     
+      always begin
+            #10 clk = ~clk;
+        end
+        
+        initial begin
+            clk = 0;
+            digit_control = 4;
+            reset = 1;
+            #100;
+            reset = 0;
+            #100;
+            reset = 1;
+        end
 endmodule

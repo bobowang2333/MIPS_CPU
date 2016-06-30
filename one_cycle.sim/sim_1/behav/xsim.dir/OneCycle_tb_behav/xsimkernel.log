@@ -1,0 +1,4 @@
+Running: xsim.dir/OneCycle_tb_behav/xsimk.exe -simmode gui -wdb OneCycle_tb_behav.wdb -simrunnum 0 -socket 49736
+Design successfully loaded
+Design Loading Memory Usage: 17352 KB (Peak: 17352 KB)
+Design Loading CPU Usage: 93 ms

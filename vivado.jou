@@ -388,3 +388,19 @@ launch_simulation
 launch_simulation
 launch_simulation
 launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+source OneCycle_tb.tcl

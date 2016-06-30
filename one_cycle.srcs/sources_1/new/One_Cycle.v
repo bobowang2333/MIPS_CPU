@@ -25,8 +25,8 @@ module One_Cycle(
         input reset,
         input [2:0] digit_control,
         output SyscallDisplay,
-        output ClkEn,
-        output RF_D2,
+        output CLK,
+        //output RF_D2,
         output DigitEn, //choose which digit shine
         output DigitOut
     );
@@ -108,7 +108,7 @@ module One_Cycle(
         .in(ZeroExt5_in),
         .out(ZeroExt5_out)
    );
-   assign ZeroExt5_in = Instruction[10:6];
+   assign ZeroExt5_in = rd;
    
    //ALU
    wire [31:0] ALU_in_X;
@@ -129,6 +129,7 @@ module One_Cycle(
         .R2(ALU_out_R2),
         .equal(ALU_out_equal)
    );
+  assign ALU_in_S = Control_sig[8:5];
    
    //Controller -> generate signal
    wire [31:0] Control_ins;
@@ -158,6 +159,7 @@ module One_Cycle(
         .R1(Regs_out_R1),
         .R2(Regs_out_R2)
     );
+    assign  Regs_we = ~Control_sig[18];
     
     //RAM 
     wire [15:0] DM_in_addr;
@@ -173,8 +175,9 @@ module One_Cycle(
     );
    assign DM_in_addr = ALU_out_R;
    assign DM_DataIn = Regs_out_R2;
+   assign DM_in_we = Control_sig[2];
    
-   //Cycle Counter
+       //Cycle Counter
    reg [31:0] Cycle_count;
    always@(posedge CLK or negedge reset)
    begin
@@ -187,7 +190,6 @@ module One_Cycle(
            Cycle_count <= Cycle_count + 1; 
         end
    end
-   
    
    /*MUX choose the proper $a0
    
@@ -240,7 +242,8 @@ module One_Cycle(
    );
    
    //Control_sig[19] is ClkEn signal.
-   wire SyscallDisplay = ALU_out_equal & Control_sig[19];
+   wire SyscallDisplay ;
+   assign SyscallDisplay = ALU_out_equal & Control_sig[19];
    assign display = ((~SyscallDisplay) & Control_sig[19]);
    
    always@(posedge CLK or negedge reset) 
@@ -303,4 +306,107 @@ module One_Cycle(
    );
    assign NextPC = PC_next[15:0];
    
+   //choose RF R1 MUX
+   wire [1:0] RF_R1;
+   assign RF_R1 = Control_sig[14:13];
+   MUX2_4_5bit rf_r1_choose(
+        .in0(rs),
+        .in1(5'd2),
+        .in2(5'd0),
+        .in3(rt),
+        .sel(RF_R1),
+        .res(Regs_R1_No)
+   );
+   
+   //choose RF R2 MUX
+   wire RF_R2;
+   assign RF_R2 = Control_sig[15];
+   MUX1_2_5bit rf_r2_choose(
+        .in0(rt),
+        .in1(5'd4),
+        .sel(RF_R2),
+        .res(Regs_R2_No)
+   );
+   
+   //choose RF W#
+   wire [1:0] RF_W;
+   assign RF_W = Control_sig[23:22];
+    MUX2_4_5bit rf_w_choose(
+        .in0(Instruction[15:11]),
+        .in1(rt),
+        .in2(5'b1_1111),
+        .in3(5'd0),
+        .sel(RF_W),
+        .res(Regs_W_No)
+    );
+   
+   //choose Din
+   wire [1:0] RegWriteData;
+   assign RegWriteData = Control_sig[1:0];
+   MUX2_4 Din_choose(
+        .in0(ALU_out_R),
+        .in1(DM_DataOut),
+        .in2(Regs_out_R1),
+        .in3(32'h0000_0000),
+        .sel(RegWriteData),
+        .res(Regs_Din)
+   );
+   
+   //choose ALU D1
+   wire [31:0] PC_32;
+   wire [1:0] ALU_D1;
+   assign ALU_D1 = Control_sig[10:9];
+   assign PC_32[15:0] = PCOut;
+   assign PC_32[31:16] = 16'h0000_0000;
+   
+   MUX2_4 ALU_D1_choose(
+        .in0(Regs_out_R1),
+        .in1(Regs_out_R2),
+        .in2(PC_32),
+        .in3(Regs_out_R1),
+        .sel(ALU_D1),
+        .res(ALU_in_X)
+   );
+   
+   //choose ALU D2
+   wire [1:0] ALU_D2;
+   assign ALU_D2 = Control_sig[12:11];
+   MUX2_4 ALU_D2_choose(
+          .in0(Regs_out_R2),
+          .in1(Regs_out_R2),
+          .in2(32'd1),
+          .in3(32'd10),
+          .sel(ALU_D2),
+          .res(ALU_in_Y)
+     );
+     
+     reg stop;
+    //CLK 
+    always@(posedge SyscallDisplay or negedge reset)
+    begin
+        if(~reset)
+        begin
+            stop <= 0;   
+        end
+        else if(SyscallDisplay)
+        begin
+            stop <= 1;
+        end
+    end
+    
+    always@(ClkCycle) 
+    begin
+        if(stop)
+        begin
+            CLK <= 0;
+        end
+        else
+        begin
+            CLK <= ClkCycle;
+        end
+    end
+    
+       
+
+    
 endmodule
