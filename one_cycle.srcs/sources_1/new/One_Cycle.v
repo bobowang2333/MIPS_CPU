@@ -42,7 +42,8 @@ module One_Cycle(
     reg CLK;
     wire ClkCycle;
    // parameter Cycle = 781250;
-   parameter Sys_clk_div = 2;
+   parameter Sys_clk_div = 1 << 20;
+   //parameter Sys_clk_div = 4;
     ClkDiv #(Sys_clk_div) SysClk(
         .clk(clk),
         .reset(reset),
@@ -139,15 +140,20 @@ module One_Cycle(
         .equal(ALU_out_equal)
    );
   assign ALU_in_S = Control_sig[8:5];
+  wire [31:0] ALU_32_equal;
+  assign ALU_32_equal = {31'd0, ALU_out_equal};
    
    //Controller -> generate signal
    wire [31:0] Control_ins;
    wire [23:0] Control_sig;
+   wire [31:0] Control_32_sig;
    ControlUnit controller(
         .instr(Control_ins),
         .Signal(Control_sig)
    );
    assign Control_ins = rom_data;
+   assign Control_32_sig = {8'd0, Control_sig};
+
    
    //Registers
     wire [4:0] Regs_R1_No;
@@ -215,8 +221,8 @@ module One_Cycle(
    //Digits
    
    wire Digits_Clk;
-   // parameter digit_clk_div  = 1 << 16;
-   parameter digit_clk_div = 1;
+   //parameter digit_clk_div  = 1 ;
+   parameter digit_clk_div = 1 << 16;
    ClkDiv #(digit_clk_div) DigitClk(
            .clk(clk),
            .reset(reset),
@@ -232,9 +238,9 @@ module One_Cycle(
         .in2(Cycle_count),
         .in3(DM_DataOut1),
         .in4(rom_data),
-        .in5(Regs_out_R1),
-        .in6(Regs_out_R2),// for test
-        .in7(), // for test
+        .in5(Regs_out_R2),
+        .in6(Control_32_sig),// for test
+        .in7(ALU_32_equal), // for test
         .sel(digit_control),
         .out(Digits_In)
    );
@@ -398,7 +404,7 @@ module One_Cycle(
      
      reg stop;
     //CLK 
-    always@(negedge SyscallDisplay or negedge reset)
+    always@(negedge CLK or negedge reset)
     begin
         if(~reset)
         begin
@@ -406,7 +412,7 @@ module One_Cycle(
         end
         else 
         begin
-         if(~SyscallDisplay)
+         if(SyscallDisplay)
          begin
             stop <= 1;
          end

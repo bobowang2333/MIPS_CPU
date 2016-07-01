@@ -2,8 +2,8 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Fri Jul 01 17:38:35 2016
-# Process ID: 5408
+# Start of session at: Fri Jul 01 20:15:50 2016
+# Process ID: 5656
 # Log file: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/One_Cycle.vds
 # Journal file: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
@@ -15,17 +15,17 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 WARNING: [Synth 8-2611] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
 WARNING: [Synth 8-2611] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
 WARNING: [Synth 8-2611] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
-WARNING: [Synth 8-2611] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:193]
-WARNING: [Synth 8-2611] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:217]
-WARNING: [Synth 8-2611] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:258]
+WARNING: [Synth 8-2611] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:199]
+WARNING: [Synth 8-2611] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:223]
+WARNING: [Synth 8-2611] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:264]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 272.238 ; gain = 96.930
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 272.375 ; gain = 97.117
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'One_Cycle' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:23]
-	Parameter Sys_clk_div bound to: 2 - type: integer 
-	Parameter digit_clk_div bound to: 1 - type: integer 
+	Parameter Sys_clk_div bound to: 1048576 - type: integer 
+	Parameter digit_clk_div bound to: 65536 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'ClkDiv' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
-	Parameter Divider bound to: 2 - type: integer 
+	Parameter Divider bound to: 1048576 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (1#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
 INFO: [Synth 8-638] synthesizing module 'PC' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v:23]
 INFO: [Synth 8-256] done synthesizing module 'PC' (2#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v:23]
@@ -76,12 +76,12 @@ INFO: [Synth 8-638] synthesizing module 'DM' [C:/UART/lab1/one_cycle/one_cycle.s
 	Parameter size bound to: 1024 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'DM' (11#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v:23]
 INFO: [Synth 8-638] synthesizing module 'ClkDiv__parameterized0' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
-	Parameter Divider bound to: 1 - type: integer 
+	Parameter Divider bound to: 65536 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ClkDiv__parameterized0' (11#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
 INFO: [Synth 8-638] synthesizing module 'MUX3_8' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v:23]
 INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v:37]
 INFO: [Synth 8-256] done synthesizing module 'MUX3_8' (12#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v:23]
-WARNING: [Synth 8-689] width (16) of port connection 'in1' does not match port width (32) of module 'MUX3_8' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:231]
+WARNING: [Synth 8-689] width (16) of port connection 'in1' does not match port width (32) of module 'MUX3_8' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:237]
 INFO: [Synth 8-638] synthesizing module 'Display_Digit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v:23]
 INFO: [Synth 8-638] synthesizing module 'HexDigit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v:23]
 INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v:28]
@@ -94,18 +94,18 @@ INFO: [Synth 8-256] done synthesizing module 'MUX2_4' (15#1) [C:/UART/lab1/one_c
 INFO: [Synth 8-638] synthesizing module 'MUX1_2_32bit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v:23]
 INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v:32]
 INFO: [Synth 8-256] done synthesizing module 'MUX1_2_32bit' (16#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v:23]
-WARNING: [Synth 8-689] width (16) of port connection 'in0' does not match port width (32) of module 'MUX1_2_32bit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:300]
-WARNING: [Synth 8-689] width (16) of port connection 'in0' does not match port width (32) of module 'MUX2_4' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:316]
+WARNING: [Synth 8-689] width (16) of port connection 'in0' does not match port width (32) of module 'MUX1_2_32bit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:306]
+WARNING: [Synth 8-689] width (16) of port connection 'in0' does not match port width (32) of module 'MUX2_4' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:322]
 INFO: [Synth 8-638] synthesizing module 'MUX2_4_5bit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v:23]
 INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v:34]
 INFO: [Synth 8-256] done synthesizing module 'MUX2_4_5bit' (17#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v:23]
 INFO: [Synth 8-638] synthesizing module 'MUX1_2_5bit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v:23]
 INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v:32]
 INFO: [Synth 8-256] done synthesizing module 'MUX1_2_5bit' (18#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v:23]
-WARNING: [Synth 8-567] referenced signal 'stop' should be on the sensitivity list [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:416]
+WARNING: [Synth 8-567] referenced signal 'stop' should be on the sensitivity list [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:422]
 INFO: [Synth 8-256] done synthesizing module 'One_Cycle' (19#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 294.152 ; gain = 118.844
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 294.313 ; gain = 119.055
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -114,40 +114,8 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[31] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[30] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[29] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[28] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[27] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[26] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[25] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[24] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[23] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[22] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[21] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[20] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[19] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[18] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[17] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[16] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[15] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[14] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[13] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[12] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[11] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[10] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[9] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[8] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[7] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[6] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[5] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[4] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[3] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[2] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[1] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
-WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[0] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:229]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 294.152 ; gain = 118.844
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 294.313 ; gain = 119.055
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -163,22 +131,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 612.449 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 612.383 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 612.449 ; gain = 437.141
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 612.383 ; gain = 437.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 612.449 ; gain = 437.141
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 612.383 ; gain = 437.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 612.449 ; gain = 437.141
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 612.383 ; gain = 437.125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
 INFO: [Synth 8-5545] ROM "ClkOutput" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
@@ -223,7 +191,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'OF_reg' [C:/UART/lab1/one_c
 WARNING: [Synth 8-327] inferring latch for variable 'CF_reg' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:91]
 WARNING: [Synth 8-327] inferring latch for variable 'R2_reg' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:73]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 612.449 ; gain = 437.141
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 612.383 ; gain = 437.125
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -354,7 +322,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 612.449 ; gain = 437.141
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 612.383 ; gain = 437.125
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -381,9 +349,9 @@ INFO: [Synth 8-5545] ROM "SysClk/ClkOutput" won't be mapped to RAM because addre
 INFO: [Synth 8-5545] ROM "DigitClk/count" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
 INFO: [Synth 8-5545] ROM "DigitClk/ClkOutput" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 612.449 ; gain = 437.141
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 612.383 ; gain = 437.125
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 612.449 ; gain = 437.141
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 612.383 ; gain = 437.125
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -482,51 +450,20 @@ WARNING: [Synth 8-3332] Sequential element (\regs_reg[0][3] ) is unused and will
 WARNING: [Synth 8-3332] Sequential element (\regs_reg[0][2] ) is unused and will be removed from module Regfile.
 WARNING: [Synth 8-3332] Sequential element (\regs_reg[0][1] ) is unused and will be removed from module Regfile.
 WARNING: [Synth 8-3332] Sequential element (\regs_reg[0][0] ) is unused and will be removed from module Regfile.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[31] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[30] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[29] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[28] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[27] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[26] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[25] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[24] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[23] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[22] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[21] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[20] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[19] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[18] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[17] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[16] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[15] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[14] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[13] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[12] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[11] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[10] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[9] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[8] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[7] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[6] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[5] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[4] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[3] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[2] ) is unused and will be removed from module One_Cycle.
-WARNING: [Synth 8-3332] Sequential element (\DigitClk/count_reg[1] ) is unused and will be removed from module One_Cycle.
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 612.449 ; gain = 437.141
+Finished Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 612.383 ; gain = 437.125
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 612.449 ; gain = 437.141
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 612.383 ; gain = 437.125
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 612.449 ; gain = 437.141
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 612.383 ; gain = 437.125
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -534,10 +471,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 645.168 ; gain = 469.859
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 646.516 ; gain = 471.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 649.047 ; gain = 473.738
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 649.383 ; gain = 474.125
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -549,7 +486,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 776.598 ; gain = 601.289
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 777.824 ; gain = 602.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -567,7 +504,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 776.598 ; gain = 601.289
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 777.824 ; gain = 602.566
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -580,7 +517,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 776.598 ; gain = 601.289
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 777.824 ; gain = 602.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -592,13 +529,13 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 776.598 ; gain = 601.289
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 777.824 ; gain = 602.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 776.598 ; gain = 601.289
+Start Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 777.824 ; gain = 602.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 776.598 ; gain = 601.289
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 777.824 ; gain = 602.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -615,18 +552,18 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     2|
-|2     |CARRY4    |   343|
+|2     |CARRY4    |   351|
 |3     |DSP48E1   |     3|
-|4     |LUT1      |   137|
-|5     |LUT2      |   181|
-|6     |LUT3      |  1155|
-|7     |LUT4      |   259|
-|8     |LUT5      |   265|
-|9     |LUT6      |  1305|
-|10    |MUXF7     |   288|
+|4     |LUT1      |   166|
+|5     |LUT2      |   180|
+|6     |LUT3      |  1186|
+|7     |LUT4      |   270|
+|8     |LUT5      |   256|
+|9     |LUT6      |  1310|
+|10    |MUXF7     |   287|
 |11    |MUXF8     |    15|
 |12    |RAM128X1D |   256|
-|13    |FDCE      |  1111|
+|13    |FDCE      |  1142|
 |14    |IBUF      |    13|
 |15    |OBUF      |    55|
 +------+----------+------+
@@ -635,39 +572,40 @@ Report Instance Areas:
 +------+----------------+-----------------------+------+
 |      |Instance        |Module                 |Cells |
 +------+----------------+-----------------------+------+
-|1     |top             |                       |  5388|
+|1     |top             |                       |  5492|
 |2     |  ALU_D1_choose |MUX2_4                 |    42|
 |3     |  ALU_D2_choose |MUX2_4_0               |    32|
-|4     |  DigitClk      |ClkDiv__parameterized0 |     4|
+|4     |  DigitClk      |ClkDiv__parameterized0 |   111|
 |5     |  Din_choose    |MUX2_4_1               |    61|
 |6     |  SysClk        |ClkDiv                 |   113|
 |7     |  alu           |ALU_bobo               |    23|
 |8     |  digit         |Display_Digit          |    14|
-|9     |  dm            |DM                     |   420|
+|9     |  dm            |DM                     |   425|
 |10    |  ext_choose    |MUX2_4_2               |    27|
 |11    |  mux1_2        |MUX1_2_32bit           |    16|
-|12    |  pc            |PC                     |  2330|
+|12    |  pc            |PC                     |  2397|
 |13    |  pc_choose     |MUX2_4_3               |    16|
-|14    |  regs          |Regfile                |  2113|
+|14    |  regs          |Regfile                |  2034|
+|15    |  rf_w_choose   |MUX2_4_5bit            |     5|
 +------+----------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 776.598 ; gain = 601.289
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 777.824 ; gain = 602.566
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 100 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 776.598 ; gain = 250.781
-Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 776.598 ; gain = 601.289
+Synthesis finished with 0 errors, 0 critical warnings and 69 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:05 . Memory (MB): peak = 777.824 ; gain = 252.027
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 777.824 ; gain = 602.566
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 615 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 623 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 2 inverter(s) to 33 load pin(s).
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 33 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 256 instances were transformed.
   RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 256 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-109 Infos, 142 Warnings, 0 Critical Warnings and 0 Errors encountered.
+109 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 776.598 ; gain = 569.324
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 776.598 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 01 17:39:43 2016...
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:15 . Memory (MB): peak = 777.824 ; gain = 570.289
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.250 . Memory (MB): peak = 777.824 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 01 20:17:10 2016...

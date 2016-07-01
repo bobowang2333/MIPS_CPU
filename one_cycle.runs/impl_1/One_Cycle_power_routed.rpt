@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date             : Fri Jul 01 17:42:02 2016
+| Date             : Fri Jul 01 20:19:37 2016
 | Host             : WIN-K3K4L7S5779 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file One_Cycle_power_routed.rpt -pb One_Cycle_power_summary_routed.pb
 | Design           : One_Cycle
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.219 |
-| Dynamic (W)              | 0.114 |
+| Total On-Chip Power (W)  | 0.234 |
+| Dynamic (W)              | 0.130 |
 | Device Static (W)        | 0.105 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 84.0  |
-| Junction Temperature (C) | 26.0  |
+| Max Ambient (C)          | 83.9  |
+| Junction Temperature (C) | 26.1  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,20 +49,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |     0.032 |     6529 |       --- |             --- |
-|   LUT as Logic           |     0.025 |     3011 |     63400 |            4.75 |
-|   LUT as Distributed RAM |     0.004 |     1024 |     19000 |            5.39 |
-|   CARRY4                 |     0.002 |      343 |     15850 |            2.16 |
-|   F7/F8 Muxes            |    <0.001 |      815 |     63400 |            1.29 |
-|   Register               |    <0.001 |     1111 |    126800 |            0.88 |
-|   BUFG                   |     0.000 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |       13 |       --- |             --- |
-| Signals                  |     0.040 |     4798 |       --- |             --- |
+| Clocks                   |     0.001 |        3 |       --- |             --- |
+| Slice Logic              |     0.040 |     6604 |       --- |             --- |
+|   LUT as Logic           |     0.031 |     3034 |     63400 |            4.79 |
+|   LUT as Distributed RAM |     0.006 |     1024 |     19000 |            5.39 |
+|   CARRY4                 |     0.002 |      351 |     15850 |            2.21 |
+|   F7/F8 Muxes            |    <0.001 |      814 |     63400 |            1.28 |
+|   Register               |    <0.001 |     1142 |    126800 |            0.90 |
+|   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
+|   Others                 |     0.000 |       14 |       --- |             --- |
+| Signals                  |     0.049 |     4875 |       --- |             --- |
 | DSPs                     |     0.002 |        3 |       240 |            1.25 |
-| I/O                      |     0.039 |       68 |       210 |           32.38 |
+| I/O                      |     0.038 |       68 |       210 |           32.38 |
 | Static Power             |     0.105 |          |           |                 |
-| Total                    |     0.219 |          |           |                 |
+| Total                    |     0.234 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.091 |       0.075 |      0.015 |
+| Vccint    |       1.000 |     0.107 |       0.092 |      0.015 |
 | Vccaux    |       1.800 |     0.020 |       0.001 |      0.018 |
 | Vcco33    |       3.300 |     0.015 |       0.011 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -141,15 +141,15 @@ Table of Contents
 +-----------------------------+-----------+
 | Name                        | Power (W) |
 +-----------------------------+-----------+
-| One_Cycle                   |     0.114 |
+| One_Cycle                   |     0.130 |
 |   ALU_D1_choose             |     0.002 |
-|   ALU_D2_choose             |     0.003 |
-|   DigitClk                  |    <0.001 |
-|   Din_choose                |     0.003 |
+|   ALU_D2_choose             |     0.004 |
+|   DigitClk                  |     0.001 |
+|   Din_choose                |     0.004 |
 |   SysClk                    |     0.001 |
-|   alu                       |     0.003 |
+|   alu                       |     0.002 |
 |   digit                     |    <0.001 |
-|   dm                        |     0.008 |
+|   dm                        |     0.010 |
 |     data_reg_0_127_0_0      |    <0.001 |
 |     data_reg_0_127_10_10    |    <0.001 |
 |     data_reg_0_127_11_11    |    <0.001 |
@@ -408,9 +408,10 @@ Table of Contents
 |     data_reg_896_1023_9_9   |    <0.001 |
 |   ext_choose                |    <0.001 |
 |   mux1_2                    |    <0.001 |
-|   pc                        |     0.045 |
+|   pc                        |     0.055 |
 |   pc_choose                 |    <0.001 |
-|   regs                      |     0.007 |
+|   regs                      |     0.009 |
+|   rf_w_choose               |    <0.001 |
 +-----------------------------+-----------+
 
 

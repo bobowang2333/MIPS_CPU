@@ -1,0 +1,2273 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 4016
+
+Current time: 	7/1/16 6:32:02 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 1
+
+Screen size: 1707x1067
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	bobobo
+User directory: C:/UART/lab1/one_cycle
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/bobobo/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/bobobo/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	122 MB
+GUI max memory:		3,066 MB
+Engine allocated memory: 393 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 35 MB (+33711kb) [00:00:09]
+// [Engine Memory]: 354 MB (+219261kb) [00:00:09]
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\UART\lab1\one_cycle\one_cycle.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/UART/lab1/one_cycle/one_cycle.xpr 
+// Tcl Message: open_project C:/UART/lab1/one_cycle/one_cycle.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 55 MB (+19766kb) [00:00:14]
+// [Engine Memory]: 413 MB (+43442kb) [00:00:14]
+// [GUI Memory]: 78 MB (+20728kb) [00:00:17]
+// [Engine Memory]: 436 MB (+3142kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 456 MB. GUI used memory: 39 MB. Current time: 7/1/16 6:32:14 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 460 MB (+1414kb) [00:00:25]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: one_cycle; location: C:/UART/lab1/one_cycle; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 525.637 ; gain = 87.449 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (cl:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v)]", 1); // A:k (H:JPanel, cl:JFrame)
+// [GUI Memory]: 83 MB (+2008kb) [00:00:38]
+// PAPropertyPanels.initPanels (One_Cycle.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, One_Cycle (One_Cycle.v)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 482 MB. GUI used memory: 38 MB. Current time: 7/1/16 6:32:40 PM CST
+// [Engine Memory]: 483 MB (+673kb) [00:00:50]
+// Elapsed time: 23 seconds
+selectCodeEditor("One_Cycle.v", 21, 150); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("One_Cycle.v", 25, 80); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 324, 73); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 191, 106); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 120, 92); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 221, 94); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Waiting for 2 sub-compilation(s) to finish... 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 18:34:04 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 60.012 ; gain = 0.031 INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 18:34:04 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 535.090 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 549.672 ; gain = 14.582 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 549.672 ; gain = 17.367 
+// [Engine Memory]: 511 MB (+3394kb) [00:02:19]
+// 'c' command handler elapsed time: 25 seconds
+// Elapsed time: 25 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 517 MB. GUI used memory: 45 MB. Current time: 7/1/16 6:34:14 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 554, 831); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 518 MB. GUI used memory: 45 MB. Current time: 7/1/16 6:34:19 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 951, 636); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1057, 624); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 44, 699); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 518 MB. GUI used memory: 46 MB. Current time: 7/1/16 6:34:25 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 9, 713); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 32, 711); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 518 MB. GUI used memory: 43 MB. Current time: 7/1/16 6:34:32 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 518 MB. GUI used memory: 46 MB. Current time: 7/1/16 6:34:32 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 557, 700); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 738, 684); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 522 MB. GUI used memory: 49 MB. Current time: 7/1/16 6:34:41 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 522 MB. GUI used memory: 46 MB. Current time: 7/1/16 6:34:41 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1089, 842); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1121, 810); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1070, 686); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 522 MB. GUI used memory: 43 MB. Current time: 7/1/16 6:34:46 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1117, 686); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 46, 302); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 34, 313); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("One_Cycle.v", 530, 298); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Elapsed time: 15 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 592.961 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message:  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 18:35:46 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 59.961 ; gain = 0.031 INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 18:35:46 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 592.961 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [GUI Memory]: 88 MB (+203kb) [00:03:58]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg 
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 592.961 ; gain = 0.000 
+// 'c' command handler elapsed time: 36 seconds
+// Elapsed time: 21 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 531 MB. GUI used memory: 47 MB. Current time: 7/1/16 6:35:54 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1034, 684); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 531 MB. GUI used memory: 48 MB. Current time: 7/1/16 6:35:58 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1224, 858); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1224, 811); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 533 MB. GUI used memory: 48 MB. Current time: 7/1/16 6:36:10 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1221, 44); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1207, 48); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 10 seconds
+setText(PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, "40"); // d:ao (a:JPanel, cl:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART
+// cp:P (cl:JFrame):  Restart : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// HMemoryUtils.trashcanNow. Engine heap size: 533 MB. GUI used memory: 43 MB. Current time: 7/1/16 6:36:32 PM CST
+// Tcl Message: restart 
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+dismissDialog("Restart"); // cp:P (cl:JFrame)
+// [Engine Memory]: 542 MB (+5622kb) [00:04:43]
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 40 us 
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 589, 337); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 457, 361); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 556 MB. GUI used memory: 47 MB. Current time: 7/1/16 6:36:39 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 386, 414); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 404, 306); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 409, 300); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("One_Cycle.v", 432, 297); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 489, 298); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 534, 296); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 505, 292); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 93 MB (+843kb) [00:05:26]
+selectCodeEditor("One_Cycle.v", 529, 298); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 529, 298); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 570, 300); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 570, 300); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 566, 301); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Elapsed time: 16 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 632.660 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 18:38:03 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 60.008 ; gain = 0.031 INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 18:38:03 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 632.660 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 632.660 ; gain = 0.000 
+// 'c' command handler elapsed time: 38 seconds
+// Elapsed time: 22 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 320, 450); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 46 MB. Current time: 7/1/16 6:38:10 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 271, 651); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 49 MB. Current time: 7/1/16 6:38:21 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 305, 651); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 268, 657); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 45 MB. Current time: 7/1/16 6:38:26 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 45 MB. Current time: 7/1/16 6:38:27 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 45 MB. Current time: 7/1/16 6:38:27 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 46 MB. Current time: 7/1/16 6:38:28 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 45 MB. Current time: 7/1/16 6:38:28 PM CST
+// Elapsed time: 18 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 27, -7); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 46, -18); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 80, -31); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 46 MB. Current time: 7/1/16 6:38:46 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 46 MB. Current time: 7/1/16 6:38:46 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 46 MB. Current time: 7/1/16 6:38:47 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 46 MB. Current time: 7/1/16 6:38:47 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 35, -102); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 142, -51); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 45 MB. Current time: 7/1/16 6:38:53 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 295, -50); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 618, 481); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 392, 22); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 45 MB. Current time: 7/1/16 6:39:08 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 469, 22); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 594, 38); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 675, 38); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 45 MB. Current time: 7/1/16 6:39:10 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 746, 22); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 94, 449); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 94, 449); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 282, 445); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 528, 308); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 528, 297); // bj:J (JPanel:JComponent, cl:JFrame)
+// [Engine Memory]: 573 MB (+4116kb) [00:07:37]
+selectCodeEditor("One_Cycle.v", 274, 290); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 274, 305); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 186, 365); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 160, 296); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 68 seconds
+selectCodeEditor("One_Cycle.v", 157, 297); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 156, 297); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 152, 297); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 152, 297); // bj:J (JPanel:JComponent, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 573 MB. GUI used memory: 45 MB. Current time: 7/1/16 7:16:23 PM CST
+// Elapsed time: 2140 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb_behav.wcfg", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 204 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 12, true); // w:Y (v:H, cl:JFrame) - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 12); // w:Y (v:H, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 12, true); // w:Y (v:H, cl:JFrame) - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 12); // w:Y (v:H, cl:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 14); // w:Y (v:H, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 17, false); // w:Y (v:H, cl:JFrame)
+// ap:bI (cl:JFrame): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // ap:bI (cl:JFrame)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: One_Cycle 
+// [Engine Memory]: 635 MB (+35884kb) [00:48:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 48 MB. Current time: 7/1/16 7:20:14 PM CST
+// TclEventType: ELABORATE_FINISH
+// [Engine Memory]: 772 MB (+109535kb) [00:48:28]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 861 MB (+53059kb) [00:48:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 861 MB. GUI used memory: 48 MB. Current time: 7/1/16 7:20:21 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.6s
+// [Engine Memory]: 921 MB (+18338kb) [00:48:35]
+// Xgd.load filename: C:/Xilinx/Vivado/2015.2/data/parts/xilinx/artix7/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 3.8s
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 99 MB (+1176kb) [00:48:37]
+// [GUI Memory]: 107 MB (+2925kb) [00:48:37]
+// Schematic: addNotify
+// [GUI Memory]: 113 MB (+602kb) [00:48:49]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:01:57 ; elapsed = 00:48:26 . Memory (MB): peak = 663.020 ; gain = 487.645 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'One_Cycle' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:23] 
+// Tcl Message: 	Parameter Sys_clk_div bound to: 4 - type: integer  	Parameter digit_clk_div bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ClkDiv' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23] 
+// Tcl Message: 	Parameter Divider bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (1#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23] INFO: [Synth 8-638] synthesizing module 'PC' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v:23] INFO: [Synth 8-256] done synthesizing module 'PC' (2#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v:23] INFO: [Synth 8-638] synthesizing module 'IM' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v:23] 
+// Tcl Message: 	Parameter size bound to: 1024 - type: integer  	Parameter FILE_PATH bound to: C:/UART/lab1/one_cycle/benchmark.txt - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (9#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v:23] INFO: [Synth 8-638] synthesizing module 'Regfile' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v:23] INFO: [Synth 8-256] done synthesizing module 'Regfile' (10#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v:23] INFO: [Synth 8-638] synthesizing module 'DM' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v:23] 
+// Tcl Message: 	Parameter size bound to: 1024 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'DM' (11#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v:23] INFO: [Synth 8-638] synthesizing module 'ClkDiv__parameterized0' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23] 
+// Tcl Message: 	Parameter Divider bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ClkDiv__parameterized0' (11#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23] INFO: [Synth 8-638] synthesizing module 'MUX3_8' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v:23] INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v:37] INFO: [Synth 8-256] done synthesizing module 'MUX3_8' (12#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v:23] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'One_Cycle' (19#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:01:58 ; elapsed = 00:48:28 . Memory (MB): peak = 693.469 ; gain = 518.094 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:59 ; elapsed = 00:48:28 . Memory (MB): peak = 693.469 ; gain = 518.094 --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/UART/lab1/one_cycle/one_cycle.srcs/constrs_1/Nexys4_Master.xdc] Finished Parsing XDC File [C:/UART/lab1/one_cycle/one_cycle.srcs/constrs_1/Nexys4_Master.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/UART/lab1/one_cycle/one_cycle.srcs/constrs_1/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/One_Cycle_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/One_Cycle_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-141] Inserted 55 OBUFs to IO ports without IO buffers. INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// [GUI Memory]: 119 MB (+1061kb) [00:48:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 76 MB. Current time: 7/1/16 7:20:41 PM CST
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:02:17 ; elapsed = 00:48:53 . Memory (MB): peak = 1009.133 ; gain = 833.758 
+// Tcl Message: 53 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1009.133 ; gain = 367.230 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 33 seconds
+dismissDialog("Open Elaborated Design"); // cp:P (cl:JFrame)
+// y:cp (cl:JFrame):  Generate Schematic : addNotify
+dismissDialog("Generate Schematic"); // y:cp (cl:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L:P (Workspace:JPanel, cl:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 29 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 135 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 83 seconds
+selectCodeEditor("One_Cycle.v", 143, 268); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 254); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 96, 246); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 96, 246, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 207, 269); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 282, 244); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 271, 249); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// PAPropertyPanels.initPanels (test_OBUF) elapsed time: 0.5s
+// PAPropertyPanels.initPanels (CLK_OUT_LED_OBUF) elapsed time: 0.3s
+// [GUI Memory]: 125 MB (+39kb) [00:56:03]
+// Elapsed time: 174 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 350, 153); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 746, 22); // o:a (JViewport:JComponent, cl:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 746, 22); // o:a (JViewport:JComponent, cl:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 746, 22); // o:a (JViewport:JComponent, cl:JFrame)Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 78 MB. Current time: 7/1/16 7:28:43 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 77 MB. Current time: 7/1/16 7:28:44 PM CST
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1168, 714); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1203, 684); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 77 MB. Current time: 7/1/16 7:28:50 PM CST
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// RDIResource.RDIViews_WAVEFORM_VIEWER: OneCycle_tb_behav.wcfg: close view
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "OneCycle_tb_behav.wcfg"); // E:w
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Elapsed time: 16 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.074 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 19:29:30 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 60.004 ; gain = 0.039 INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 19:29:30 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1031.074 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg 
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1031.074 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1031.074 ; gain = 0.000 
+// 'c' command handler elapsed time: 40 seconds
+// Elapsed time: 24 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 84 MB. Current time: 7/1/16 7:29:39 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 187, 201); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 77 MB. Current time: 7/1/16 7:29:45 PM CST
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb_behav.wcfg", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 995, 511); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1047, 487); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1067, 686); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 78 MB. Current time: 7/1/16 7:30:20 PM CST
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART
+// cp:P (cl:JFrame):  Restart : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// Tcl Message: restart 
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+dismissDialog("Restart"); // cp:P (cl:JFrame)
+setText(PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, "50"); // d:ao (a:JPanel, cl:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 50 us 
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 45, 634); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 81 MB. Current time: 7/1/16 7:30:38 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 84 MB. Current time: 7/1/16 7:30:40 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 88 MB. Current time: 7/1/16 7:30:41 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 77 MB. Current time: 7/1/16 7:30:43 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 28, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ap:bI (cl:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ap:bI (cl:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// cp:P (cl:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: [Fri Jul 01 19:31:02 2016] Launched synth_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log [Fri Jul 01 19:31:02 2016] Launched impl_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cp:P (cl:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Bitstream Generation Completed: addNotify
+// ax:bI (cl:JFrame): Feedback Request: addNotify
+// Elapsed time: 291 seconds
+dismissDialog("Bitstream Generation Completed"); // Q:ap (cl:JFrame)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a:JButton (JPanel:JComponent, ax:bI)
+dismissDialog("Feedback Request"); // ax:bI (cl:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("One_Cycle.v", 184, 224); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 164, 233); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 169, 232); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 169, 232); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 122, 226); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 94, 229); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 94, 229, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 129, 232); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 93, 233); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 93, 233, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 122, 341); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 128, 350); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 121, 358); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 121, 345); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 121, 345, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 166, 344); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 166, 344, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 165, 346); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 24, 293); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("One_Cycle.v", 40, 278); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 24, 298); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 28, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ap:bI (cl:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ap:bI (cl:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Fri Jul 01 19:37:14 2016] Launched synth_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log [Fri Jul 01 19:37:14 2016] Launched impl_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 132 MB (+85kb) [01:08:47]
+// Elapsed time: 220 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SCOPE, "Scopes"); // ap:DockableFrame
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unMinimizeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // ap:DockableFrame
+collapseTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "OneCycle_tb ; OneCycle_tb ; Verilog Module", 0); // d:av (JViewport:JComponent, cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // A:k (H:JPanel, cl:JFrame)
+// PAPropertyPanels.initPanels (Nexys4_Master.xdc) elapsed time: 1.9s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_Master.xdc]", 5, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_Master.xdc]", 5, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_Master.xdc]", 5, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_Master.xdc]", 5, false); // A:k (H:JPanel, cl:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 54 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// cp:P (cl:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 89 MB. Current time: 7/1/16 7:42:08 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.9s
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 623 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2015.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/UART/lab1/one_cycle/.Xil/Vivado-4016-WIN-K3K4L7S5779/dcp/One_Cycle.xdc] Finished Parsing XDC File [C:/UART/lab1/one_cycle/.Xil/Vivado-4016-WIN-K3K4L7S5779/dcp/One_Cycle.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1155.473 ; gain = 4.844 
+// Tcl Message: Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1155.473 ; gain = 4.844 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 256 instances were transformed.   RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 256 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1230.664 ; gain = 141.527 
+// Device view-level: 0.0
+// [GUI Memory]: 139 MB (+783kb) [01:10:32]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dm' command handler elapsed time: 21 seconds
+// ax:bI (cl:JFrame): Feedback Request: addNotify
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 22 seconds
+dismissDialog("Open Implemented Design"); // cp:P (cl:JFrame)
+// cp:P (cl:JFrame):  Open Timing Summary : addNotify
+// [GUI Memory]: 148 MB (+2052kb) [01:10:37]
+dismissDialog("Open Timing Summary"); // cp:P (cl:JFrame)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a:JButton (JPanel:JComponent, ax:bI)
+dismissDialog("Feedback Request"); // ax:bI (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 921 MB. GUI used memory: 99 MB. Current time: 7/1/16 7:42:36 PM CST
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// RouteApi::initDelayMediator elapsed time: 27.8s
+// Tcl Message: open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0] 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274533486A 
+// [Engine Memory]: 1,102 MB (+141205kb) [01:10:59]
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ag (cl:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ag)
+// cp:P (cl:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ag (cl:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1656.602 ; gain = 4.469 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'x' command handler elapsed time: 28 seconds
+// Elapsed time: 26 seconds
+dismissDialog("Program Device"); // cp:P (cl:JFrame)
+// Elapsed time: 112 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_Master.xdc", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 98, 335); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 140, 264); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 115, 359); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 108, 343); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 88, 313); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 200, 185); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 108, 268); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 220, 217); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 160, 115); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 160, 115); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 328, 107); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 371, 107); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 368, 107); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 328, 207); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("One_Cycle.v", 159, 260); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 307, 305); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("One_Cycle.v", 106, 192); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 192, 171); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 196, 157); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 196, 157); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("One_Cycle.v", 238, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("One_Cycle.v", 232, 285); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 274, 369); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 274, 369); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 98, 385); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 162, 385); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 232, 280); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 86, 380); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("One_Cycle.v", 128, 332); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 271, 383); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 395, 384); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 192, 283); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 352, 399); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 194, 315); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 194, 327); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 143, 347); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 204, 319); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 171, 307); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 172, 285); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 170, 297); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// PAPropertyPanels.initPanels (CLK_OUT_LED_OBUF) elapsed time: 0.2s
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 54, 677); // o:a (JViewport:JComponent, cl:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 54, 677); // o:a (JViewport:JComponent, cl:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 54, 695); // o:a (JViewport:JComponent, cl:JFrame)Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Elapsed time: 17 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1660.660 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings. 
+// a:a (cl:JFrame): Critical Messages: addNotify
+// 'c' command handler elapsed time: 19 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,129 MB. GUI used memory: 93 MB. Current time: 7/1/16 7:49:56 PM CST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 215, 282); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("One_Cycle.v", 227, 280); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 339, 281); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("One_Cycle.v", 27, 173); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 22, 69); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("One_Cycle.v", 219, 334); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings. 
+// a:a (cl:JFrame): Critical Messages: addNotify
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cl:JFrame)
+// Elapsed time: 74 seconds
+selectCodeEditor("One_Cycle.v", 147, 380); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, d:cp)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled 
+// Tcl Message: 1     while executing "catch {rdi::run_program $scr_file} error_log"     (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)     invoked from within "::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"     (procedure "tclapp::xilinx::xsim::elaborate" line 13)     invoked from within "tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..." 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1670.613 ; gain = 9.953 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("One_Cycle.v", 62, 449); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 52 seconds
+selectCodeEditor("One_Cycle.v", 40, 208); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 43, 312); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 80, 313); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 243, 433); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 106, 316); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 314, 278); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 49 seconds
+selectCodeEditor("One_Cycle.v", 71, 281); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 226, 296); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 324, 302); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("One_Cycle.v", 152, 246); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 54, 246); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 75, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 55, 244); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 172, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 234, 254); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 267, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 276, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 298, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 319, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 212, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 319, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 119, 193); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 259, 260); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 168, 264); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 320, 361); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 104, 209); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message:  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 19:56:59 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 59.996 ; gain = 0.047 INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 19:56:59 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1674.719 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1691.254 ; gain = 16.535 
+// 'c' command handler elapsed time: 22 seconds
+// Elapsed time: 22 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,153 MB. GUI used memory: 100 MB. Current time: 7/1/16 7:57:07 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,153 MB. GUI used memory: 102 MB. Current time: 7/1/16 7:57:09 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,153 MB. GUI used memory: 103 MB. Current time: 7/1/16 7:57:12 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 29, 487); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// RDIResource.RDIViews_WAVEFORM_VIEWER: OneCycle_tb_behav.wcfg: close view
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "OneCycle_tb_behav.wcfg"); // E:w
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 37, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ap:bI (cl:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ap:bI (cl:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Fri Jul 01 19:57:30 2016] Launched synth_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log [Fri Jul 01 19:57:30 2016] Launched impl_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 211 seconds
+selectCodeEditor("Nexys4_Master.xdc", 255, 246); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 158 MB (+2559kb) [01:29:56]
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Bitstream Generation Completed: addNotify
+// ax:bI (cl:JFrame): Feedback Request: addNotify
+// Elapsed time: 76 seconds
+dismissDialog("Bitstream Generation Completed"); // Q:ap (cl:JFrame)
+dismissDialog("Feedback Request"); // ax:bI (cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Hardware Manager"); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ag (cl:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ag)
+// cp:P (cl:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ag (cl:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'x' command handler elapsed time: 24 seconds
+// Elapsed time: 23 seconds
+dismissDialog("Program Device"); // cp:P (cl:JFrame)
+// Elapsed time: 148 seconds
+selectCodeEditor("One_Cycle.v", 190, 416); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "One_Cycle.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 282, 468); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 251 seconds
+selectCodeEditor("One_Cycle.v", 398, 277); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 167, 109); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 167, 109, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 171, 201); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 243, 141); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 254, 117); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 206, 113); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 206, 113, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 240, 128); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 240, 128); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 39, 127); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 39, 127, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("One_Cycle.v", 39, 127); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Elapsed time: 17 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, d:cp)
+// 'c' command handler elapsed time: 21 seconds
+selectCodeEditor("One_Cycle.v", 274, 301); // bj:J (JPanel:JComponent, cl:JFrame)
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+selectCodeEditor("One_Cycle.v", 104, 348); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 147, 348); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 147, 348, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 147, 348); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 147, 348, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 20:11:20 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 60.070 ; gain = 0.035 INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 20:11:20 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Tcl Message: open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg 
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0, false, true); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectCodeEditor("One_Cycle.v", 134, 296); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 166 MB (+189kb) [01:39:51]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Elapsed time: 15 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 20:12:21 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 60.023 ; gain = 0.047 INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 20:12:21 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// 'c' command handler elapsed time: 40 seconds
+// Elapsed time: 24 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb_behav.wcfg", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb_behav.wcfg", 2, false, true); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame) - Double Click
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 99 MB. Current time: 7/1/16 8:12:34 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 213, 469); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 99 MB. Current time: 7/1/16 8:12:37 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 99 MB. Current time: 7/1/16 8:12:38 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 309, 160); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 50, 148); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Elapsed time: 15 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot OneCycle_tb_behav 
+// Tcl Message:  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 20:13:34 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 59.996 ; gain = 0.039 INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 20:13:34 2016... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source OneCycle_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1705.328 ; gain = 0.000 
+// 'c' command handler elapsed time: 39 seconds
+// Elapsed time: 23 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb_behav.wcfg", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OneCycle_tb_behav.wcfg", 2, false, true); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame) - Double Click
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 106 MB. Current time: 7/1/16 8:13:44 PM CST
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 268, 176); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 98 MB. Current time: 7/1/16 8:13:47 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 98 MB. Current time: 7/1/16 8:13:48 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 99 MB. Current time: 7/1/16 8:13:49 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 102 MB. Current time: 7/1/16 8:13:50 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 104 MB. Current time: 7/1/16 8:13:52 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 98 MB. Current time: 7/1/16 8:13:53 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 99 MB. Current time: 7/1/16 8:13:54 PM CST
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 107 MB. Current time: 7/1/16 8:13:57 PM CST
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 98 MB. Current time: 7/1/16 8:13:58 PM CST
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 50 us 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 100 MB. Current time: 7/1/16 8:14:00 PM CST
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 50 us 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 100 MB. Current time: 7/1/16 8:14:04 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 100 MB. Current time: 7/1/16 8:14:04 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 134, 277); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 98 MB. Current time: 7/1/16 8:14:08 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 293, 280); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 244, 280); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 98 MB. Current time: 7/1/16 8:14:14 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 98 MB. Current time: 7/1/16 8:14:15 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 98 MB. Current time: 7/1/16 8:14:15 PM CST
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 288, 291); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 376, 305); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 98 MB. Current time: 7/1/16 8:14:17 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 436, 305); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 37, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ap:bI (cl:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ap:bI (cl:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// cp:P (cl:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Fri Jul 01 20:14:23 2016] Launched synth_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log [Fri Jul 01 20:14:23 2016] Launched impl_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cp:P (cl:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 349, 365); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 310, 318); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 101 MB. Current time: 7/1/16 8:14:25 PM CST
+// Elapsed time: 17 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 272, 308); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 258, 308); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 246, 317); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 318, 327); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 235, 317); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 312, 317); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 269, 310); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 100 MB. Current time: 7/1/16 8:14:48 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 250, 306); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 250, 306); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 250, 306); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 316, 290); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 300, 308); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 250, 305); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 277, 308); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 240, 312); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 103 MB. Current time: 7/1/16 8:14:54 PM CST
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 296, 312); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 250, 302); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 235, 301); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 96 MB. Current time: 7/1/16 8:14:56 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 291, 310); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 257, 305); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 224, 295); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 288, 308); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 95 MB. Current time: 7/1/16 8:15:06 PM CST
+// Elapsed time: 20 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cl:JFrame)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+// Elapsed time: 17 seconds
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_Delete Files", "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "One_Cycle.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 265, 749); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 37, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ap:bI (cl:JFrame): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // h:JCheckBox (JPanel:JComponent, ap:bI): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // ap:bI (cl:JFrame)
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Fri Jul 01 20:15:49 2016] Launched synth_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log [Fri Jul 01 20:15:49 2016] Launched impl_1... Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 96 seconds
+selectCodeEditor("One_Cycle.v", 237, 669); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("One_Cycle.v", 290, 661); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 290, 661); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 290, 661, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 290, 661); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 290, 661); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 290, 661); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("One_Cycle.v", 146, 569); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 157, 610); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 166, 642); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 166, 674); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 184, 642); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 184, 672); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 192, 657); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 210, 638); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 245, 616); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 254, 598); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 258, 566); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 256, 596); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 242, 636); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 210, 657); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 212, 684); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 209, 664); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 204, 656); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 214, 642); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 236, 618); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 262, 588); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 254, 601); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 244, 561); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 253, 594); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 241, 606); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 222, 624); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 212, 637); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 198, 669); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 197, 654); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 218, 634); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 265, 605); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 272, 588); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 252, 578); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 252, 560); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 250, 578); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 272, 562); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 280, 581); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 277, 604); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 269, 620); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 266, 636); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 253, 650); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 252, 664); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 252, 692); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 249, 713); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 249, 725); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 249, 754); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 249, 784); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 302, 765); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 273, 644); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 292, 608); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 305, 578); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 302, 556); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 300, 549); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 300, 516); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 304, 536); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 296, 566); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 285, 593); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 277, 618); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 252, 612); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 232, 609); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 232, 610); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 272, 617); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 261, 602); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 265, 560); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 254, 598); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 244, 588); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 258, 568); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 270, 552); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 270, 552, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("One_Cycle.v", 270, 552); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 298, 537); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 288, 522); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 328, 513); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 325, 529); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 321, 562); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 305, 573); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 280, 604); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 242, 638); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("One_Cycle.v", 237, 652); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Bitstream Generation Completed: addNotify
+// ax:bI (cl:JFrame): Feedback Request: addNotify
+// Elapsed time: 96 seconds
+dismissDialog("Bitstream Generation Completed"); // Q:ap (cl:JFrame)
+dismissDialog("Feedback Request"); // ax:bI (cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN, "Open Implemented Design"); // X:JMenu (JPopupMenu:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Hardware Manager"); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ag (cl:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ag)
+// cp:P (cl:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ag (cl:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1706.164 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'x' command handler elapsed time: 23 seconds
+// Elapsed time: 22 seconds
+dismissDialog("Program Device"); // cp:P (cl:JFrame)
