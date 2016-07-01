@@ -22,10 +22,12 @@
 
 module DM(
     input [15:0] addr,
+    input [15:0] addr1,
     input clk,
     input we,
     input [31:0] DataInput,
-    output [31:0] DataOut  
+    output [31:0] DataOut,
+    output [31:0] DataOut1  
     );
     
     parameter size = 1024;
@@ -41,6 +43,6 @@ module DM(
     end
     
     assign DataOut = data[addr];
-    
+    assign DataOut1 = data[addr1];
     
 endmodule

@@ -24,17 +24,26 @@ module One_Cycle(
         input clk,
         input reset,
         input [2:0] digit_control,
+        input [7:0] dm_in_addr,
         output SyscallDisplay,
         output CLK,
+        output Digits_Clk,
         //output RF_D2,
-        output DigitEn, //choose which digit shine
-        output DigitOut
+        output [7:0] DigitEn, //choose which digit shine
+        output [7:0] DigitOut,
+        output [31:0] Cycle_count,
+        output test,
+        output ClkCycle,
+        output CLK_OUT_LED,
+        output clk_OUT_LED
+        //output SyscallDisplay
     );
     //Clock Divider
     reg CLK;
     wire ClkCycle;
-    parameter Cycle = 781250;
-    ClkDiv #(Cycle) SysClk(
+   // parameter Cycle = 781250;
+   parameter Sys_clk_div = 2;
+    ClkDiv #(Sys_clk_div) SysClk(
         .clk(clk),
         .reset(reset),
         .ClkOutput(ClkCycle)
@@ -47,7 +56,7 @@ module One_Cycle(
     PC pc(
         .NextPC(NextPC),
         .reset(reset),
-        .clk(clk),
+        .clk(CLK),
         .Out(PCOut)
     );
     assign PC0 = PCOut + 1;
@@ -166,12 +175,15 @@ module One_Cycle(
     wire DM_in_we;
     wire [31:0] DM_DataIn;
     wire [31:0] DM_DataOut; 
+    wire [31:0] DM_DataOut1;
     DM dm(
         .addr(DM_in_addr),
+        .addr1({8'd0, dm_in_addr}),
         .clk(CLK),
         .we(DM_in_we),
         .DataInput(DM_DataIn),
-        .DataOut(DM_DataOut) 
+        .DataOut(DM_DataOut),
+        .DataOut1(DM_DataOut1)
     );
    assign DM_in_addr = ALU_out_R;
    assign DM_DataIn = Regs_out_R2;
@@ -203,7 +215,8 @@ module One_Cycle(
    //Digits
    
    wire Digits_Clk;
-   parameter digit_clk_div = 1 << 16;
+   // parameter digit_clk_div  = 1 << 16;
+   parameter digit_clk_div = 1;
    ClkDiv #(digit_clk_div) DigitClk(
            .clk(clk),
            .reset(reset),
@@ -217,11 +230,11 @@ module One_Cycle(
         .in0(Display_data),
         .in1(PCOut),
         .in2(Cycle_count),
-        .in3(DM_DataOut),
+        .in3(DM_DataOut1),
         .in4(rom_data),
         .in5(Regs_out_R1),
-        .in6(0),
-        .in7(0),
+        .in6(Regs_out_R2),// for test
+        .in7(), // for test
         .sel(digit_control),
         .out(Digits_In)
    );
@@ -243,10 +256,13 @@ module One_Cycle(
    
    //Control_sig[19] is ClkEn signal.
    wire SyscallDisplay ;
-   assign SyscallDisplay = ALU_out_equal & Control_sig[19];
+   //testing
+   assign SyscallDisplay = (ALU_out_equal & (Control_sig[19]));
+   //assign SyscallDisplay = ((Control_sig[19]));
    assign display = ((~SyscallDisplay) & Control_sig[19]);
+   assign test = SyscallDisplay;
    
-   always@(posedge CLK or negedge reset) 
+   always@(negedge CLK or negedge reset) 
    begin
         if(~reset)
         begin
@@ -373,7 +389,7 @@ module One_Cycle(
    assign ALU_D2 = Control_sig[12:11];
    MUX2_4 ALU_D2_choose(
           .in0(Regs_out_R2),
-          .in1(Regs_out_R2),
+          .in1(ExtResult),
           .in2(32'd1),
           .in3(32'd10),
           .sel(ALU_D2),
@@ -382,15 +398,18 @@ module One_Cycle(
      
      reg stop;
     //CLK 
-    always@(posedge SyscallDisplay or negedge reset)
+    always@(negedge SyscallDisplay or negedge reset)
     begin
         if(~reset)
         begin
             stop <= 0;   
         end
-        else if(SyscallDisplay)
+        else 
         begin
+         if(~SyscallDisplay)
+         begin
             stop <= 1;
+         end
         end
     end
     
@@ -406,7 +425,21 @@ module One_Cycle(
         end
     end
     
-       
-
+    // for testing
     
+    reg [31:0] test1;
+    always@(posedge SyscallDisplay or negedge reset)
+    begin
+        if(~reset)
+        begin
+            test1 <= 0;
+        end
+        else
+        begin
+        test1 <= test1 + 1;
+        end
+    end   
+    
+    assign CLK_OUT_LED = CLK;
+    assign clk_OUT_LED = clk;
 endmodule

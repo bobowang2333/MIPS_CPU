@@ -1,0 +1,308 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Fri Jul 01 17:40:47 2016
+| Host         : WIN-K3K4L7S5779 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file One_Cycle_control_sets_placed.rpt
+| Design       : One_Cycle
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   255 |
+| Minimum Number of register sites lost to control set restrictions |  1001 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              87 |           29 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1024 |          914 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-------------------------+-------------------------+------------------+----------------+
+|      Clock Signal      |      Enable Signal      |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++------------------------+-------------------------+-------------------------+------------------+----------------+
+| ~pc/test_OBUF          |                         | SysClk/ClkOutput_reg_0  |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | regs/regs_reg[16][31]_0 |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[18][0][0]   | regs/regs_reg[16][31]_0 |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | regs/regs_reg[16][31]_0 |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | regs/regs_reg[16][31]_0 |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | regs/31][11]_i_2_n_0    |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | SysClk/ClkOutput_reg_0  |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | SysClk/ClkOutput_reg_0  |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | regs/regs_reg[16][31]_0 |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | regs/31][11]_i_2_n_0    |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | regs/31][11]_i_2_n_0    |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | SysClk/ClkOutput_reg_0  |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | regs/31][11]_i_2_n_0    |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | regs/31][11]_i_2_n_0    |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | SysClk/ClkOutput_reg_0  |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | SysClk/ClkOutput_reg_0  |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[18][0][0]   | regs/31][11]_i_2_n_0    |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | regs/31][11]_i_2_n_0    |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[2][0][0]    | regs/regs_reg[16][31]_0 |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | regs/regs_reg[16][31]_0 |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[2][0][0]    | regs/31][11]_i_2_n_0    |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | regs/regs_reg[16][31]_0 |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | SysClk/ClkOutput_reg_0  |                1 |              1 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[28][0][0]   | regs/regs_reg[17][29]_0 |                2 |              2 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[20][0][0]   | regs/regs_reg[17][29]_0 |                2 |              2 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[8][0][0]    | regs/regs_reg[17][29]_0 |                2 |              2 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[16][0]      | regs/regs_reg[17][29]_0 |                2 |              2 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[24][0][0]   | regs/regs_reg[17][29]_0 |                2 |              2 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[4][0][0]    | regs/regs_reg[17][29]_0 |                2 |              2 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[12][0][0]   | regs/regs_reg[17][29]_0 |                2 |              2 |
+|  clk_OUT_LED_OBUF_BUFG |                         | regs/regs_reg[16][31]_0 |                1 |              2 |
+|  DigitClk/clk          |                         | regs/regs_reg[16][31]_0 |                2 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[28][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[19][0][0]   | regs/31][23]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[29][0][0]   | regs/31][23]_i_2_n_0    |                2 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[16][0]      | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[2][0][0]    | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[2][0][0]    | regs/regs_reg[17][29]_0 |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | regs/regs_reg[17][29]_0 |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[31][0][0]   | regs/31][19]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | regs/regs_reg[17][29]_0 |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[3][0][0]    | regs/31][23]_i_2_n_0    |                2 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[4][0][0]    | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[5][0][0]    | regs/31][27]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][0]_15[0] | regs/regs_reg[17][29]_0 |                2 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | regs/regs_reg[17][29]_0 |                2 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[20][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[7][0][0]    | regs/31][19]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[8][0][0]    | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[9][0][0]    | regs/31][27]_i_2_n_0    |                3 |              3 |
+| ~CLK_OUT_LED_OBUF_BUFG | pc/E[0]                 | regs/regs_reg[17][29]_0 |                2 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | regs/regs_reg[17][29]_0 |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[21][0][0]   | regs/31][27]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[17][0][0]   | regs/31][27]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[15][0][0]   | regs/31][19]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[11][0][0]   | regs/31][23]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | regs/regs_reg[17][29]_0 |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[23][0][0]   | regs/31][19]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[18][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[12][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[24][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[25][0][0]   | regs/31][27]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | regs/31][17]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[18][0][0]   | regs/regs_reg[17][29]_0 |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | regs/regs_reg[17][29]_0 |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[27][0][0]   | regs/31][19]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[13][0][0]   | regs/31][23]_i_2_n_0    |                3 |              3 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[11][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | regs/31][5]_i_2_n_0     |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[16][0]      | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[16][0]      | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[16][0]      | regs/31][27]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[25][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[21][0][0]   | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[31][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[31][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[31][0][0]   | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[3][0][0]    | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[3][0][0]    | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[3][0][0]    | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[25][0][0]   | regs/regs_reg[17][29]_0 |                2 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[4][0][0]    | regs/31][19]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | regs/31][5]_i_2_n_0     |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[4][0][0]    | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[4][0][0]    | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[15][0][0]   | regs/31][23]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[5][0][0]    | regs/31][17]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[11][0][0]   | regs/regs_reg[17][29]_0 |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[5][0][0]    | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[12][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[12][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[12][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[5][0][0]    | regs/31][23]_i_2_n_0    |                2 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[23][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[5][0][0]    | regs/regs_reg[17][29]_0 |                2 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[13][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[13][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[21][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[13][0][0]   | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[21][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | regs/31][23]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | regs/31][5]_i_2_n_0     |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[23][0][0]   | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[11][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[15][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[15][0][0]   | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | regs/31][5]_i_2_n_0     |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[17][0][0]   | regs/31][17]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[17][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[17][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[21][0][0]   | regs/31][17]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[17][0][0]   | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[23][0][0]   | regs/31][23]_i_2_n_0    |                2 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[18][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[18][0][0]   | regs/31][23]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[18][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[18][0][0]   | regs/31][5]_i_2_n_0     |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[7][0][0]    | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[7][0][0]    | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[19][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[19][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[7][0][0]    | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[19][0][0]   | regs/regs_reg[17][29]_0 |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[24][0][0]   | regs/31][19]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][0]_15[0] | regs/31][17]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][0]_15[0] | regs/31][19]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][0]_15[0] | regs/31][23]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][0]_15[0] | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[8][0][0]    | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[8][0][0]    | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[20][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[20][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[20][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[8][0][0]    | regs/31][27]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | regs/31][5]_i_2_n_0     |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[9][0][0]    | regs/31][17]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[24][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[9][0][0]    | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[9][0][0]    | regs/31][23]_i_2_n_0    |                2 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[24][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[27][0][0]   | regs/31][23]_i_2_n_0    |                2 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[27][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[27][0][0]   | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[9][0][0]    | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | regs/31][23]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[28][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[28][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[28][0][0]   | regs/31][27]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[29][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[29][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[29][0][0]   | regs/regs_reg[17][29]_0 |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | regs/31][5]_i_2_n_0     |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[2][0][0]    | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[2][0][0]    | regs/31][23]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[2][0][0]    | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[2][0][0]    | regs/31][5]_i_2_n_0     |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | regs/31][27]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[25][0][0]   | regs/31][17]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | regs/31][23]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[25][0][0]   | regs/31][19]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | regs/31][19]_i_2_n_0    |                4 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | regs/31][23]_i_2_n_0    |                3 |              4 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[13][0][0]   | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[19][0][0]   | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[29][0][0]   | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[31][0][0]   | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[7][0][0]    | regs/31][5]_i_2_n_0     |                4 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[7][0][0]    | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[29][0][0]   | regs/31][5]_i_2_n_0     |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[27][0][0]   | regs/31][5]_i_2_n_0     |                4 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[3][0][0]    | regs/31][5]_i_2_n_0     |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[19][0][0]   | regs/31][5]_i_2_n_0     |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[27][0][0]   | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[11][0][0]   | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[11][0][0]   | regs/31][5]_i_2_n_0     |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[23][0][0]   | regs/31][5]_i_2_n_0     |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[15][0][0]   | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[3][0][0]    | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[15][0][0]   | regs/31][5]_i_2_n_0     |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[23][0][0]   | regs/31][17]_i_2_n_0    |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[31][0][0]   | regs/31][5]_i_2_n_0     |                5 |              5 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[21][0][0]   | regs/31][5]_i_2_n_0     |                5 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[4][0][0]    | regs/regs_reg[16][31]_0 |                4 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[25][0][0]   | regs/31][5]_i_2_n_0     |                5 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[12][0][0]   | regs/regs_reg[16][31]_0 |                4 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[13][0][0]   | regs/31][11]_i_2_n_0    |                5 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[13][0][0]   | regs/31][5]_i_2_n_0     |                6 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][0]_15[0] | regs/31][5]_i_2_n_0     |                6 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[24][0][0]   | regs/regs_reg[16][31]_0 |                4 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[20][0][0]   | regs/regs_reg[16][31]_0 |                4 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[17][0][0]   | regs/31][5]_i_2_n_0     |                6 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[28][0][0]   | regs/regs_reg[16][31]_0 |                4 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[9][0][0]    | regs/31][5]_i_2_n_0     |                6 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[5][0][0]    | regs/31][5]_i_2_n_0     |                6 |              6 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[14][0][0]   | regs/30][13]_i_1_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[15][0][0]   | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[17][0][0]   | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[19][0][0]   | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][0]_15[0] | regs/31][11]_i_2_n_0    |                7 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[27][0][0]   | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[31][0][0]   | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[6][0][0]    | regs/30][13]_i_1_n_0    |                7 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[3][0][0]    | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[23][0][0]   | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[26][0][0]   | regs/30][13]_i_1_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[7][0][0]    | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[29][0][0]   | regs/31][11]_i_2_n_0    |                7 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[22][0][0]   | regs/30][13]_i_1_n_0    |                7 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[5][0][0]    | regs/31][11]_i_2_n_0    |                7 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[8][0][0]    | regs/regs_reg[16][31]_0 |                4 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[21][0][0]   | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[9][0][0]    | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[30][0][0]   | regs/30][13]_i_1_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[25][0][0]   | regs/31][11]_i_2_n_0    |                7 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[16][0]      | regs/regs_reg[16][31]_0 |                5 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[10][0][0]   | regs/30][13]_i_1_n_0    |                7 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[11][0][0]   | regs/31][11]_i_2_n_0    |                6 |              7 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[8][0][0]    | regs/30][13]_i_1_n_0    |                8 |              8 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[16][0]      | regs/30][13]_i_1_n_0    |                7 |              8 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[18][0][0]   | regs/30][13]_i_1_n_0    |                7 |              8 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[2][0][0]    | regs/30][13]_i_1_n_0    |                7 |              8 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[12][0][0]   | regs/30][13]_i_1_n_0    |                6 |              9 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[24][0][0]   | regs/30][13]_i_1_n_0    |                8 |              9 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[28][0][0]   | regs/30][13]_i_1_n_0    |                8 |              9 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[20][0][0]   | regs/30][13]_i_1_n_0    |                7 |              9 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[4][0][0]    | regs/30][13]_i_1_n_0    |                8 |              9 |
+|  CLK_OUT_LED_OBUF_BUFG |                         | regs/regs_reg[17][29]_0 |                6 |             15 |
+| ~CLK_OUT_LED_OBUF_BUFG | pc/E[0]                 | regs/regs_reg[16][31]_0 |               22 |             29 |
+|  CLK_OUT_LED_OBUF_BUFG |                         | regs/regs_reg[16][31]_0 |               11 |             33 |
+|  clk_OUT_LED_OBUF_BUFG |                         | SysClk/ClkOutput_reg_0  |                8 |             33 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][31]_8    |                         |               32 |            128 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][31]_4    |                         |               32 |            128 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][31]_3    |                         |               32 |            128 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][31]_2    |                         |               32 |            128 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][31]_1    |                         |               32 |            128 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][31]_9    |                         |               32 |            128 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][31]_7    |                         |               32 |            128 |
+|  CLK_OUT_LED_OBUF_BUFG | pc/regs_reg[1][31]_6    |                         |               32 |            128 |
++------------------------+-------------------------+-------------------------+------------------+----------------+
+
+

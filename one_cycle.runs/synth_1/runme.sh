@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ClkDiv.vds -m64 -mode batch -messageDb vivado.pb -notrace -source ClkDiv.tcl
+EAStep vivado -log One_Cycle.vds -m64 -mode batch -messageDb vivado.pb -notrace -source One_Cycle.tcl

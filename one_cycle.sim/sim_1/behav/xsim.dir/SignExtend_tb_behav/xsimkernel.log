@@ -1,4 +1,0 @@
-Running: xsim.dir/SignExtend_tb_behav/xsimk.exe -simmode gui -wdb SignExtend_tb_behav.wdb -simrunnum 0 -socket 49458
-Design successfully loaded
-Design Loading Memory Usage: 17200 KB (Peak: 17200 KB)
-Design Loading CPU Usage: 93 ms

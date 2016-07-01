@@ -1,4 +1,0 @@
-Running: xsim.dir/ZeroExtend_tb_behav/xsimk.exe -simmode gui -wdb ZeroExtend_tb_behav.wdb -simrunnum 0 -socket 49471
-Design successfully loaded
-Design Loading Memory Usage: 17164 KB (Peak: 17164 KB)
-Design Loading CPU Usage: 61 ms
