@@ -44,8 +44,8 @@ module One_Cycle(
     reg CLK;
     wire ClkCycle;
    // parameter Cycle = 781250;
-   //parameter Sys_clk_div = 1 << 20;
-   parameter Sys_clk_div = 4;
+   parameter Sys_clk_div = 1 << 20;
+   //parameter Sys_clk_div = 4;
     ClkDiv #(Sys_clk_div) SysClk(
         .clk(clk),
         .reset(reset),
@@ -54,6 +54,7 @@ module One_Cycle(
    
     //----IF----------------------
     //PC 
+    
     wire [15:0] NextPC;
     wire [15:0] PC0;
     wire [15:0] PCOut;
@@ -64,7 +65,8 @@ module One_Cycle(
         .Out(PCOut)
     );
     assign PC0 = PCOut + 1;
-    
+    //No jump
+    assign NextPC = PC0;
     //ROM
     wire [15:0] rom_addr;
     wire [31:0] rom_data;
@@ -280,7 +282,7 @@ module One_Cycle(
           .sel(ALU_D1),
           .res(ALU_in_X)
      );
-
+  
    
    //MUX ext choose
    wire [1:0] EXT;
@@ -307,12 +309,10 @@ module One_Cycle(
           .res(ALU_in_Y)
      );  
      
-    /*
-    /*
    // split some signal bne beq
     wire bne, beq, bne_beq;
     assign bne = IDex_control_out[21];
-    assign beq = CIDex_control_out[20];
+    assign beq = IDex_control_out[20];
     assign bne_beq = (beq & ALU_out_equal) | (~((~bne) | ALU_out_equal));
     
     wire [31:0] b_equal_1 ;
@@ -325,7 +325,7 @@ module One_Cycle(
         .res(b_equal_res)
     );
     
-        
+     
 
 
     //---------------------------EX/EM----------------------
@@ -339,7 +339,7 @@ module One_Cycle(
     wire [31:0] Exem_jump;
     wire [31:0] Exem_RFR2;
     wire [31:0] Exem_RFR1;
-    EX_MEM(
+    EX_MEM exmem(
             .ALU_R_in(ALU_out_R),
             .ALU_R2_in(ALU_out_R2),
             .ALU_equal_in(ALU_out_equal),
@@ -363,7 +363,7 @@ module One_Cycle(
             .RF_R2_out(Exem_RFR2),
             .RF_R1_out(Exem_RFR1)
                 );
-                
+              
     //-----------------------MEM-------------------------
     
                 
@@ -383,6 +383,7 @@ module One_Cycle(
   
    assign DM_in_we = Exem_ctrl_out[2];
    
+   /*
          //choose PC MUX
      wire [1:0] Branch;
      wire [31:0] PC_next;
@@ -391,11 +392,12 @@ module One_Cycle(
         .in0(Exem_PC0),
         .in1(Exem_beq_equal),
         .in2(Exem_jump),
-        .in3(xem_RFR1),
+        .in3(Exem_RFR1),
         .sel(Branch),
         .res(PC_next)
     );
     assign NextPC = PC_next[15:0];  
+    */
    
    //------------------MEM/WB----------------
    wire [31:0] Memwb_alu_r;
@@ -426,6 +428,7 @@ module One_Cycle(
            .RF_R1_out(Memwb_RFR1),
            .RF_R2_out(Memwb_RFR2)
        );
+  
        
   // ------WB--------------------
    
@@ -440,12 +443,12 @@ module One_Cycle(
          .sel(RF_W),
          .res(Regs_W_No)
      );
-    
+   
     //choose Din
     wire [1:0] RegWriteData;
     assign RegWriteData = Memwb_ctrl[1:0];
     MUX2_4 Din_choose(
-         .in0(AMemwb_alu_r),
+         .in0(Memwb_alu_r),
          .in1(Memwb_dm_data),
          .in2(Memwb_RFR1),
          .in3(32'h0000_0000),
@@ -454,7 +457,7 @@ module One_Cycle(
     );
     
        
-       
+     
        //Cycle Counter
    reg [31:0] Cycle_count;
    always@(posedge CLK or negedge reset)
@@ -468,18 +471,11 @@ module One_Cycle(
            Cycle_count <= Cycle_count + 1; 
         end
    end
-   
-   /*MUX choose the proper $a0
-   
-   MUX1_2_5bit mux1_3_5bit(
-        .in0(rt),
-        .in1(5'd4),
-        .sel(Control_sig[15]),
-        .res()
-   );*/
+  
+
    
    //Digits
-   /*
+   
    wire Digits_Clk;
    //parameter digit_clk_div  = 1 ;
    parameter digit_clk_div = 1 << 16;
@@ -489,15 +485,38 @@ module One_Cycle(
            .ClkOutput(Digits_Clk)
        );
    
-   reg [31:0] Display_data;
-   wire display;
+    //Control_sig[19] is ClkEn signal.
+    wire SyscallDisplay ;
+    wire display;
+    reg [31:0] Display_data;
+    //testing
+    assign SyscallDisplay = (Memwb_alu_equal & (Memwb_ctrl[19]));
+    //assign SyscallDisplay = ((Control_sig[19]));
+    assign display = ((~SyscallDisplay) & Memwb_ctrl[19]);
+    assign test = SyscallDisplay;
+    
+    
+    always@(posedge CLK or negedge reset)  // ??? negedge CLK??
+      begin
+           if(~reset)
+           begin
+               Display_data <= 0;
+           end
+           else if (display)
+               begin
+                  Display_data <=  Memwb_RFR2;
+               end     
+      end
+ 
+   
+   
    wire [31:0] Digits_In;  
    MUX3_8 DigitSrc(
         .in0(Display_data),
-        .in1(PCOut),
+        .in1(Memwb_PC0),
         .in2(Cycle_count),
-        .in3(DM_DataOut1),
-        .in4(rom_data),
+        .in3(0),
+        .in4(0),
         .in5(0),
         .in6(0),// for test
         .in7(0), // for test
@@ -519,28 +538,9 @@ module One_Cycle(
         .digiten(DigitEn),
         .digitsout(DigitOut)
    );
-   
-   //Control_sig[19] is ClkEn signal.
-   wire SyscallDisplay ;
-   //testing
-   assign SyscallDisplay = (Memwb_alu_equal & (Memwb_ctrl[19]));
-   //assign SyscallDisplay = ((Control_sig[19]));
-   assign display = ((~SyscallDisplay) & CMemwb_ctrl[19]);
-   assign test = SyscallDisplay;
-   
-   always@(negedge CLK or negedge reset) 
-   begin
-        if(~reset)
-        begin
-            Display_data <= 0;
-        end
-        else if (display)
-            begin
-               Display_data <=  Memwb_RFR2;
-            end     
-   end
-   
+  
      
+    
      reg stop;
     //CLK 
     always@(negedge CLK or negedge reset)
@@ -587,5 +587,5 @@ module One_Cycle(
     
     assign CLK_OUT_LED = CLK;
     assign clk_OUT_LED = clk;
-    */
+    
 endmodule

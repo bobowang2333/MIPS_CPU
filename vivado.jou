@@ -110,3 +110,117 @@ launch_simulation
 launch_simulation
 launch_simulation
 launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+restart
+run 10 us
+restart
+run 10 us
+save_wave_config {C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source IM_tb.tcl
+restart
+run 10 us
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source IM_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top OneCycle_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+run 20 us
+save_wave_config {C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/One_Cycle_Streamline/one_cycle_pipeline/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw_target
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+close_hw_target
+close_sim
+close_sim

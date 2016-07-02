@@ -51,12 +51,11 @@ module OneCycle_tb(
         .DigitOut(DigitOut),
         .Cycle_count(Cycle_count),
         .test(test),
-         .ClkCycle(ClkCycle),
+        .ClkCycle(ClkCycle),
         .CLK_OUT_LED(CLK_OUT_LED),
         .clk_OUT_LED(clk_OUT_LED)
-  
      );
-     /*
+     
       always begin
             #1 clk = ~clk;
         end
@@ -71,5 +70,5 @@ module OneCycle_tb(
             reset = 1;
         end
         
-     */
+     
 endmodule

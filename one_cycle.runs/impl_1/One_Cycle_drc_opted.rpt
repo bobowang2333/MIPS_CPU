@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Fri Jul 01 20:17:50 2016
+| Date         : Sat Jul 02 11:51:05 2016
 | Host         : WIN-K3K4L7S5779 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
@@ -20,10 +20,50 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 9
+             Violations found: 17
 
 2. REPORT DETAILS
 -----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer dm_in_addr[0]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer dm_in_addr[1]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
+BUFC-1#3 Warning
+Input Buffer Connections  
+Input buffer dm_in_addr[2]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
+BUFC-1#4 Warning
+Input Buffer Connections  
+Input buffer dm_in_addr[3]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
+BUFC-1#5 Warning
+Input Buffer Connections  
+Input buffer dm_in_addr[4]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
+BUFC-1#6 Warning
+Input Buffer Connections  
+Input buffer dm_in_addr[5]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
+BUFC-1#7 Warning
+Input Buffer Connections  
+Input buffer dm_in_addr[6]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
+BUFC-1#8 Warning
+Input Buffer Connections  
+Input buffer dm_in_addr[7]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
 CFGBVS-1#1 Warning
 Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
 Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:

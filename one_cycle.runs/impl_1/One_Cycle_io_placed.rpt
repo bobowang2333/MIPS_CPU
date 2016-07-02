@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Fri Jul 01 20:18:19 2016
+| Date         : Sat Jul 02 11:51:21 2016
 | Host         : WIN-K3K4L7S5779 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_io -file One_Cycle_io_placed.rpt
 | Design       : One_Cycle

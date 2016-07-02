@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="49" />
+   <WVObjectSize size="48" />
    <wvobject db_ref_id="1" fp_name="/OneCycle_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -39,11 +39,6 @@
       <obj_property name="ElementShortName">DigitOut[7:0]</obj_property>
       <obj_property name="ObjectShortName">DigitOut[7:0]</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="/OneCycle_tb/Cycle_count" type="array">
-      <obj_property name="ElementShortName">Cycle_count[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Cycle_count[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
    <wvobject db_ref_id="1" fp_name="/OneCycle_tb/Digits_Clk" type="logic">
       <obj_property name="ElementShortName">Digits_Clk</obj_property>
       <obj_property name="ObjectShortName">Digits_Clk</obj_property>
@@ -63,6 +58,18 @@
    <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/op26_31" type="array">
       <obj_property name="ElementShortName">op26_31[5:0]</obj_property>
       <obj_property name="ObjectShortName">op26_31[5:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/ifid_instr" type="array">
+      <obj_property name="ElementShortName">ifid_instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ifid_instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/rom_addr" type="array">
+      <obj_property name="ElementShortName">rom_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rom_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/rom_data" type="array">
+      <obj_property name="ElementShortName">rom_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rom_data[31:0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/ALU_in_X" type="array">
       <obj_property name="ElementShortName">ALU_in_X[31:0]</obj_property>
@@ -94,11 +101,6 @@
    <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/test1" type="array">
       <obj_property name="ElementShortName">test1[31:0]</obj_property>
       <obj_property name="ObjectShortName">test1[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/Instruction" type="array">
-      <obj_property name="ElementShortName">Instruction[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Instruction[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/Control_sig" type="array">
@@ -148,16 +150,6 @@
    <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/Digits_In" type="array">
       <obj_property name="ElementShortName">Digits_In[31:0]</obj_property>
       <obj_property name="ObjectShortName">Digits_In[31:0]</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/DM_in_addr" type="array">
-      <obj_property name="ElementShortName">DM_in_addr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">DM_in_addr[15:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/DM_DataIn" type="array">
-      <obj_property name="ElementShortName">DM_DataIn[31:0]</obj_property>
-      <obj_property name="ObjectShortName">DM_DataIn[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/OneCycle_tb/one_cycle/dm/data[0]" type="array">
       <obj_property name="ElementShortName">[0][31:0]</obj_property>

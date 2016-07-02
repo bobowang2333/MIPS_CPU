@@ -45,8 +45,6 @@ proc step_failed { step } {
 set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set rc [catch {
@@ -54,12 +52,12 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   debug::add_scope template.lib 1
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir C:/UART/lab1/one_cycle/one_cycle.cache/wt [current_project]
-  set_property parent.project_path C:/UART/lab1/one_cycle/one_cycle.xpr [current_project]
-  set_property ip_repo_paths c:/UART/lab1/one_cycle/one_cycle.cache/ip [current_project]
-  set_property ip_output_repo c:/UART/lab1/one_cycle/one_cycle.cache/ip [current_project]
-  add_files -quiet C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/One_Cycle.dcp
-  read_xdc C:/UART/lab1/one_cycle/one_cycle.srcs/constrs_1/Nexys4_Master.xdc
+  set_property webtalk.parent_dir C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.cache/wt [current_project]
+  set_property parent.project_path C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.xpr [current_project]
+  set_property ip_repo_paths c:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.cache/ip [current_project]
+  set_property ip_output_repo c:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.cache/ip [current_project]
+  add_files -quiet C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.runs/synth_1/One_Cycle.dcp
+  read_xdc C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/constrs_1/Nexys4_Master.xdc
   link_design -top One_Cycle -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

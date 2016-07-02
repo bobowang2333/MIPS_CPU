@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1467375348">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1467431362">
   <File Type="RDS-DCP" Name="One_Cycle.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="One_Cycle_utilization_synth.pb"/>
@@ -138,13 +138,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/One_Cycle.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/MUX3_8.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -156,6 +149,58 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/order.txt"/>
         <Attr Name="ImportTime" Val="1467360288"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/IF_ID.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/IF_ID.v"/>
+        <Attr Name="ImportTime" Val="1467390877"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ID_EX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/ID_EX.v"/>
+        <Attr Name="ImportTime" Val="1467392385"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/EX_MEM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/EX_MEM.v"/>
+        <Attr Name="ImportTime" Val="1467395324"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MEM_WB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/MEM_WB.v"/>
+        <Attr Name="ImportTime" Val="1467396506"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/One_Cycle.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/One_Cycle.v"/>
+        <Attr Name="ImportTime" Val="1467399005"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>

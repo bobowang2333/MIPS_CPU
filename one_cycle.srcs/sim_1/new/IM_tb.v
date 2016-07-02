@@ -34,5 +34,9 @@ module IM_tb(
     initial 
     begin
         addr = 0;
+        #10;
+        addr = 1;
+        #10;
+        addr = 2;
     end
 endmodule

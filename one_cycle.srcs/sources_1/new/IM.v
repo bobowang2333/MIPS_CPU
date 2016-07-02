@@ -26,7 +26,8 @@ module IM(
     );
     
     parameter size = 1024;
-    parameter FILE_PATH = "C:/UART/lab1/one_cycle/benchmark.txt";
+    parameter FILE_PATH = "C:/One_Cycle_Streamline/one_cycle_pipeline/pipeline.txt";
+   
     
     reg [31:0] mem [size-1:0];
     
