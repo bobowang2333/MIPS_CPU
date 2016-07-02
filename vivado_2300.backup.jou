@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Jul 01 21:09:00 2016
+# Process ID: 5844
+# Log file: C:/One_Cycle_Streamline/one_cycle_pipeline/vivado.log
+# Journal file: C:/One_Cycle_Streamline/one_cycle_pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.xpr
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/IF_ID.v w ]
+add_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/IF_ID.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/IF_ID_tb.v w ]
+add_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/IF_ID_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IF_ID_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/ID_EX.v w ]
+add_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/ID_EX.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/ID_EX_tb.v w ]
+add_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/ID_EX_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ID_EX_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/EX_MEM.v w ]
+add_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/EX_MEM.v
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/EX_MEM_tb.v w ]
+add_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/EX_MEM_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top EX_MEM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/MEM_WB.v w ]
+add_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/MEM_WB.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/MEM_WB.v w ]
+add_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/MEM_WB.v
+remove_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/MEM_WB.v
+file delete -force C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/MEM_WB.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/MEM_WB_tb.v w ]
+add_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/MEM_WB_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MEM_WB_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top OneCycle_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/test.v w ]
+add_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/test.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/test_tb.v w ]
+add_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/test_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation

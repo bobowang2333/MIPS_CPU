@@ -1,0 +1,1912 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Jul 01 18:31:46 2016
+# Process ID: 4016
+# Log file: C:/UART/lab1/one_cycle/vivado.log
+# Journal file: C:/UART/lab1/one_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/UART/lab1/one_cycle/one_cycle.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 525.637 ; gain = 87.449
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:194]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:218]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:259]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:142]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExt16_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Regfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_5bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX1_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/HexDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DisplayDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/OneCycle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneCycle_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OneCycle_tb_behav xil_defaultlib.OneCycle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:317]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:232]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:301]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv(Divider=4)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.Instr_Splitter
+Compiling module xil_defaultlib.SignExtender
+Compiling module xil_defaultlib.ZeroExt16_32
+Compiling module xil_defaultlib.ZeroExtender
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.ClkDiv(Divider=1)
+Compiling module xil_defaultlib.MUX3_8
+Compiling module xil_defaultlib.HexDigit
+Compiling module xil_defaultlib.Display_Digit
+Compiling module xil_defaultlib.MUX2_4
+Compiling module xil_defaultlib.MUX1_2_32bit
+Compiling module xil_defaultlib.MUX2_4_5bit
+Compiling module xil_defaultlib.MUX1_2_5bit
+Compiling module xil_defaultlib.One_Cycle
+Compiling module xil_defaultlib.OneCycle_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot OneCycle_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 18:34:04 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 60.012 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 18:34:04 2016...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 535.090 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 549.672 ; gain = 14.582
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 549.672 ; gain = 17.367
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 592.961 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:194]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:218]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:259]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:142]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExt16_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Regfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_5bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX1_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/HexDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DisplayDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/OneCycle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneCycle_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OneCycle_tb_behav xil_defaultlib.OneCycle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:317]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:232]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:301]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv(Divider=4)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.Instr_Splitter
+Compiling module xil_defaultlib.SignExtender
+Compiling module xil_defaultlib.ZeroExt16_32
+Compiling module xil_defaultlib.ZeroExtender
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.ClkDiv(Divider=1)
+Compiling module xil_defaultlib.MUX3_8
+Compiling module xil_defaultlib.HexDigit
+Compiling module xil_defaultlib.Display_Digit
+Compiling module xil_defaultlib.MUX2_4
+Compiling module xil_defaultlib.MUX1_2_32bit
+Compiling module xil_defaultlib.MUX2_4_5bit
+Compiling module xil_defaultlib.MUX1_2_5bit
+Compiling module xil_defaultlib.One_Cycle
+Compiling module xil_defaultlib.OneCycle_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot OneCycle_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 18:35:46 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 59.961 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 18:35:46 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 592.961 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 592.961 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 40 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 632.660 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:194]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:218]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:259]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:142]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExt16_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Regfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_5bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX1_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/HexDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DisplayDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/OneCycle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneCycle_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OneCycle_tb_behav xil_defaultlib.OneCycle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:317]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:232]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:301]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv(Divider=4)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.Instr_Splitter
+Compiling module xil_defaultlib.SignExtender
+Compiling module xil_defaultlib.ZeroExt16_32
+Compiling module xil_defaultlib.ZeroExtender
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.ClkDiv(Divider=1)
+Compiling module xil_defaultlib.MUX3_8
+Compiling module xil_defaultlib.HexDigit
+Compiling module xil_defaultlib.Display_Digit
+Compiling module xil_defaultlib.MUX2_4
+Compiling module xil_defaultlib.MUX1_2_32bit
+Compiling module xil_defaultlib.MUX2_4_5bit
+Compiling module xil_defaultlib.MUX1_2_5bit
+Compiling module xil_defaultlib.One_Cycle
+Compiling module xil_defaultlib.OneCycle_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot OneCycle_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 18:38:03 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 60.008 ; gain = 0.031
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 18:38:03 2016...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 632.660 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 632.660 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: One_Cycle
+WARNING: [Synth 8-2611] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+WARNING: [Synth 8-2611] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [Synth 8-2611] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [Synth 8-2611] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:194]
+WARNING: [Synth 8-2611] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:218]
+WARNING: [Synth 8-2611] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:259]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:57 ; elapsed = 00:48:26 . Memory (MB): peak = 663.020 ; gain = 487.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'One_Cycle' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:23]
+	Parameter Sys_clk_div bound to: 4 - type: integer 
+	Parameter digit_clk_div bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ClkDiv' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
+	Parameter Divider bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (1#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC' (2#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'IM' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v:23]
+	Parameter size bound to: 1024 - type: integer 
+	Parameter FILE_PATH bound to: C:/UART/lab1/one_cycle/benchmark.txt - type: string 
+INFO: [Synth 8-3876] $readmem data file 'C:/UART/lab1/one_cycle/benchmark.txt' is read successfully [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v:36]
+INFO: [Synth 8-256] done synthesizing module 'IM' (3#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v:23]
+INFO: [Synth 8-638] synthesizing module 'Instr_Splitter' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Instr_Splitter' (4#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExtender' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SignExtender' (5#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v:23]
+INFO: [Synth 8-638] synthesizing module 'ZeroExt16_32' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ZeroExt16_32' (6#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'ZeroExtender' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ZeroExtender' (7#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU_bobo' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+INFO: [Synth 8-256] done synthesizing module 'ALU_bobo' (8#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v:22]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v:23]
+	Parameter RegWriteData0 bound to: 0 - type: integer 
+	Parameter RegWriteData1 bound to: 1 - type: integer 
+	Parameter MemWrite bound to: 2 - type: integer 
+	Parameter Branch0 bound to: 3 - type: integer 
+	Parameter Branch1 bound to: 4 - type: integer 
+	Parameter ALUControl0 bound to: 5 - type: integer 
+	Parameter ALUControl1 bound to: 6 - type: integer 
+	Parameter ALUControl2 bound to: 7 - type: integer 
+	Parameter ALUControl3 bound to: 8 - type: integer 
+	Parameter ALU_D1_0 bound to: 9 - type: integer 
+	Parameter ALU_D1_1 bound to: 10 - type: integer 
+	Parameter ALU_D2_0 bound to: 11 - type: integer 
+	Parameter ALU_D2_1 bound to: 12 - type: integer 
+	Parameter RF_R1_0 bound to: 13 - type: integer 
+	Parameter RF_R1_1 bound to: 14 - type: integer 
+	Parameter RF_R2 bound to: 15 - type: integer 
+	Parameter ext_0 bound to: 16 - type: integer 
+	Parameter ext_1 bound to: 17 - type: integer 
+	Parameter RegWrite bound to: 18 - type: integer 
+	Parameter ClkEn bound to: 19 - type: integer 
+	Parameter beq_0 bound to: 20 - type: integer 
+	Parameter beq_1 bound to: 21 - type: integer 
+	Parameter RF_W_0 bound to: 22 - type: integer 
+	Parameter RF_W_1 bound to: 23 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (9#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-638] synthesizing module 'Regfile' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Regfile' (10#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v:23]
+INFO: [Synth 8-638] synthesizing module 'DM' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v:23]
+	Parameter size bound to: 1024 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DM' (11#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v:23]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv__parameterized0' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
+	Parameter Divider bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv__parameterized0' (11#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX3_8' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v:23]
+INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v:37]
+INFO: [Synth 8-256] done synthesizing module 'MUX3_8' (12#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'in1' does not match port width (32) of module 'MUX3_8' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:232]
+INFO: [Synth 8-638] synthesizing module 'Display_Digit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v:23]
+INFO: [Synth 8-638] synthesizing module 'HexDigit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v:23]
+INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v:28]
+INFO: [Synth 8-256] done synthesizing module 'HexDigit' (13#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v:23]
+INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v:101]
+INFO: [Synth 8-256] done synthesizing module 'Display_Digit' (14#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX2_4' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v:23]
+INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v:34]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_4' (15#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX1_2_32bit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v:23]
+INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v:32]
+INFO: [Synth 8-256] done synthesizing module 'MUX1_2_32bit' (16#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'in0' does not match port width (32) of module 'MUX1_2_32bit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:301]
+WARNING: [Synth 8-689] width (16) of port connection 'in0' does not match port width (32) of module 'MUX2_4' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:317]
+INFO: [Synth 8-638] synthesizing module 'MUX2_4_5bit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v:23]
+INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v:34]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_4_5bit' (17#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX1_2_5bit' [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v:23]
+INFO: [Synth 8-226] default block is never used [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v:32]
+INFO: [Synth 8-256] done synthesizing module 'MUX1_2_5bit' (18#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v:23]
+WARNING: [Synth 8-567] referenced signal 'stop' should be on the sensitivity list [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:418]
+INFO: [Synth 8-256] done synthesizing module 'One_Cycle' (19#1) [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:58 ; elapsed = 00:48:28 . Memory (MB): peak = 693.469 ; gain = 518.094
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[31] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[30] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[29] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[28] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[27] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[26] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[25] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[24] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[23] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[22] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[21] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[20] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[19] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[18] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[17] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[16] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[15] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[14] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[13] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[12] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[11] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[10] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[9] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[8] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[7] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[6] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[5] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[4] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[3] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[2] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[1] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+WARNING: [Synth 8-3295] tying undriven pin DigitSrc:in7[0] to constant 0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:230]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:59 ; elapsed = 00:48:28 . Memory (MB): peak = 693.469 ; gain = 518.094
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/UART/lab1/one_cycle/one_cycle.srcs/constrs_1/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/UART/lab1/one_cycle/one_cycle.srcs/constrs_1/Nexys4_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/UART/lab1/one_cycle/one_cycle.srcs/constrs_1/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/One_Cycle_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/One_Cycle_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-141] Inserted 55 OBUFs to IO ports without IO buffers.
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:17 ; elapsed = 00:48:53 . Memory (MB): peak = 1009.133 ; gain = 833.758
+53 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1009.133 ; gain = 367.230
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.074 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:194]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:218]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:259]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:142]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExt16_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Regfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_5bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX1_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/HexDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DisplayDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/OneCycle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneCycle_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OneCycle_tb_behav xil_defaultlib.OneCycle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:317]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:232]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:301]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv(Divider=4)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.Instr_Splitter
+Compiling module xil_defaultlib.SignExtender
+Compiling module xil_defaultlib.ZeroExt16_32
+Compiling module xil_defaultlib.ZeroExtender
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.ClkDiv(Divider=1)
+Compiling module xil_defaultlib.MUX3_8
+Compiling module xil_defaultlib.HexDigit
+Compiling module xil_defaultlib.Display_Digit
+Compiling module xil_defaultlib.MUX2_4
+Compiling module xil_defaultlib.MUX1_2_32bit
+Compiling module xil_defaultlib.MUX2_4_5bit
+Compiling module xil_defaultlib.MUX1_2_5bit
+Compiling module xil_defaultlib.One_Cycle
+Compiling module xil_defaultlib.OneCycle_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot OneCycle_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 19:29:30 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 60.004 ; gain = 0.039
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 19:29:30 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1031.074 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1031.074 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1031.074 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jul 01 19:31:02 2016] Launched synth_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log
+[Fri Jul 01 19:31:02 2016] Launched impl_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jul 01 19:37:14 2016] Launched synth_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log
+[Fri Jul 01 19:37:14 2016] Launched impl_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 623 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/UART/lab1/one_cycle/.Xil/Vivado-4016-WIN-K3K4L7S5779/dcp/One_Cycle.xdc]
+Finished Parsing XDC File [C:/UART/lab1/one_cycle/.Xil/Vivado-4016-WIN-K3K4L7S5779/dcp/One_Cycle.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1155.473 ; gain = 4.844
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1155.473 ; gain = 4.844
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 256 instances
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1230.664 ; gain = 141.527
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274533486A
+set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1656.602 ; gain = 4.469
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1660.660 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:197]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:221]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:262]
+ERROR: [VRFC 10-2071] test1 is already implicitly declared on line 241 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:435]
+ERROR: [VRFC 10-1040] module One_Cycle ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:23]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:197]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:221]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:262]
+ERROR: [VRFC 10-2071] test1 is already implicitly declared on line 241 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:435]
+ERROR: [VRFC 10-1040] module One_Cycle ignored due to previous errors [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:23]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:197]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:221]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:262]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:142]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExt16_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Regfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_5bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX1_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/HexDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DisplayDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/OneCycle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneCycle_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OneCycle_tb_behav xil_defaultlib.OneCycle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:320]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:235]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:304]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv(Divider=1048576)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.Instr_Splitter
+Compiling module xil_defaultlib.SignExtender
+Compiling module xil_defaultlib.ZeroExt16_32
+Compiling module xil_defaultlib.ZeroExtender
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.ClkDiv(Divider=65536)
+Compiling module xil_defaultlib.MUX3_8
+Compiling module xil_defaultlib.HexDigit
+Compiling module xil_defaultlib.Display_Digit
+Compiling module xil_defaultlib.MUX2_4
+Compiling module xil_defaultlib.MUX1_2_32bit
+Compiling module xil_defaultlib.MUX2_4_5bit
+Compiling module xil_defaultlib.MUX1_2_5bit
+Compiling module xil_defaultlib.One_Cycle
+Compiling module xil_defaultlib.OneCycle_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run_program' was cancelled
+1
+    while executing
+"catch {rdi::run_program $scr_file} error_log"
+    (procedure "::tclapp::xilinx::xsim::usf_launch_script" line 35)
+    invoked from within
+"::tclapp::xilinx::xsim::usf_launch_script "xsim" $step"
+    (procedure "tclapp::xilinx::xsim::elaborate" line 13)
+    invoked from within
+"tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav -int_os_type 64 -int_debug_..."
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1670.613 ; gain = 9.953
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:199]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:223]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:264]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:142]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExt16_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Regfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_5bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX1_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/HexDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DisplayDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/OneCycle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneCycle_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OneCycle_tb_behav xil_defaultlib.OneCycle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:322]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:237]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:306]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv(Divider=1048576)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.Instr_Splitter
+Compiling module xil_defaultlib.SignExtender
+Compiling module xil_defaultlib.ZeroExt16_32
+Compiling module xil_defaultlib.ZeroExtender
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.ClkDiv(Divider=65536)
+Compiling module xil_defaultlib.MUX3_8
+Compiling module xil_defaultlib.HexDigit
+Compiling module xil_defaultlib.Display_Digit
+Compiling module xil_defaultlib.MUX2_4
+Compiling module xil_defaultlib.MUX1_2_32bit
+Compiling module xil_defaultlib.MUX2_4_5bit
+Compiling module xil_defaultlib.MUX1_2_5bit
+Compiling module xil_defaultlib.One_Cycle
+Compiling module xil_defaultlib.OneCycle_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot OneCycle_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 19:56:59 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 59.996 ; gain = 0.047
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 19:56:59 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1674.719 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1691.254 ; gain = 16.535
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jul 01 19:57:30 2016] Launched synth_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log
+[Fri Jul 01 19:57:30 2016] Launched impl_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1705.328 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1705.328 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:199]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:223]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:264]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:142]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExt16_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Regfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_5bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX1_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/HexDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DisplayDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/OneCycle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneCycle_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OneCycle_tb_behav xil_defaultlib.OneCycle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:322]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:237]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:306]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv(Divider=1048576)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.Instr_Splitter
+Compiling module xil_defaultlib.SignExtender
+Compiling module xil_defaultlib.ZeroExt16_32
+Compiling module xil_defaultlib.ZeroExtender
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.ClkDiv(Divider=65536)
+Compiling module xil_defaultlib.MUX3_8
+Compiling module xil_defaultlib.HexDigit
+Compiling module xil_defaultlib.Display_Digit
+Compiling module xil_defaultlib.MUX2_4
+Compiling module xil_defaultlib.MUX1_2_32bit
+Compiling module xil_defaultlib.MUX2_4_5bit
+Compiling module xil_defaultlib.MUX1_2_5bit
+Compiling module xil_defaultlib.One_Cycle
+Compiling module xil_defaultlib.OneCycle_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot OneCycle_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 20:11:20 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 60.070 ; gain = 0.035
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 20:11:20 2016...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1705.328 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1705.328 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 1705.328 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1705.328 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:199]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:223]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:264]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:142]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExt16_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Regfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_5bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX1_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/HexDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DisplayDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/OneCycle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneCycle_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OneCycle_tb_behav xil_defaultlib.OneCycle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:322]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:237]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:306]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv(Divider=1048576)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.Instr_Splitter
+Compiling module xil_defaultlib.SignExtender
+Compiling module xil_defaultlib.ZeroExt16_32
+Compiling module xil_defaultlib.ZeroExtender
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.ClkDiv(Divider=65536)
+Compiling module xil_defaultlib.MUX3_8
+Compiling module xil_defaultlib.HexDigit
+Compiling module xil_defaultlib.Display_Digit
+Compiling module xil_defaultlib.MUX2_4
+Compiling module xil_defaultlib.MUX1_2_32bit
+Compiling module xil_defaultlib.MUX2_4_5bit
+Compiling module xil_defaultlib.MUX1_2_5bit
+Compiling module xil_defaultlib.One_Cycle
+Compiling module xil_defaultlib.OneCycle_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot OneCycle_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 20:12:21 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 60.023 ; gain = 0.047
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 20:12:21 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1705.328 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1705.328 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1705.328 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1705.328 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/OneCycle_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'OneCycle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+"xvlog -m64 --relax -prj OneCycle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Instr_Splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ALU_bobo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_bobo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ZeroExt16_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkOutput is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/ClkDiv.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX2_4_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX1_2_5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/HexDigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/Display_Digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display_Digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_Cycle
+WARNING: [VRFC 10-1315] redeclaration of ansi port CLK is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:42]
+WARNING: [VRFC 10-1315] redeclaration of ansi port ClkCycle is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:43]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cycle_count is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:199]
+WARNING: [VRFC 10-1315] redeclaration of ansi port Digits_Clk is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:223]
+WARNING: [VRFC 10-1315] redeclaration of ansi port SyscallDisplay is not allowed [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:264]
+WARNING: [VRFC 10-756] identifier Control_sig is used before its declaration [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:142]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/MUX3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ZeroExt16_32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt16_32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/SignExtend_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/PC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Instr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/IM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ClkDiv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Control_tb.v:73]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/Regfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX2_4_5bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_4_5bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/MUX1_2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1_2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/HexDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HexDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/DisplayDigit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplayDigit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.srcs/sim_1/new/OneCycle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OneCycle_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c465f5bf2c584dce85315be3a0e944b5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OneCycle_tb_behav xil_defaultlib.OneCycle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:322]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in1 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:237]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port in0 [C:/UART/lab1/one_cycle/one_cycle.srcs/sources_1/new/One_Cycle.v:306]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv(Divider=4)
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.Instr_Splitter
+Compiling module xil_defaultlib.SignExtender
+Compiling module xil_defaultlib.ZeroExt16_32
+Compiling module xil_defaultlib.ZeroExtender
+Compiling module xil_defaultlib.ALU_bobo
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.ClkDiv(Divider=65536)
+Compiling module xil_defaultlib.MUX3_8
+Compiling module xil_defaultlib.HexDigit
+Compiling module xil_defaultlib.Display_Digit
+Compiling module xil_defaultlib.MUX2_4
+Compiling module xil_defaultlib.MUX1_2_32bit
+Compiling module xil_defaultlib.MUX2_4_5bit
+Compiling module xil_defaultlib.MUX1_2_5bit
+Compiling module xil_defaultlib.One_Cycle
+Compiling module xil_defaultlib.OneCycle_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot OneCycle_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav/xsim.dir/OneCycle_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 01 20:13:34 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 59.996 ; gain = 0.039
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 01 20:13:34 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1705.328 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/UART/lab1/one_cycle/ALU_tb_behav0.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UART/lab1/one_cycle/one_cycle.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "OneCycle_tb_behav -key {Behavioral:sim_1:Functional:OneCycle_tb} -tclbatch {OneCycle_tb.tcl} -view {C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
+source OneCycle_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1705.328 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'OneCycle_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1705.328 ; gain = 0.000
+run 50 us
+run 50 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jul 01 20:14:23 2016] Launched synth_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log
+[Fri Jul 01 20:14:23 2016] Launched impl_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jul 01 20:15:49 2016] Launched synth_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/synth_1/runme.log
+[Fri Jul 01 20:15:49 2016] Launched impl_1...
+Run output will be captured here: C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1706.164 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].

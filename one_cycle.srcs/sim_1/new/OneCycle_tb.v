@@ -24,6 +24,7 @@ module OneCycle_tb(
     );
     reg clk;
     reg reset;
+    /*
     reg [2:0] digit_control;
     reg [7:0] dm_in_addr;
     wire SyscallDisplay;
@@ -33,13 +34,16 @@ module OneCycle_tb(
     wire [31:0] Cycle_count;
     wire Digits_Clk;
     wire test;
-    wire ClkCycle;
+ 
     wire CLK_OUT_LED;
     wire clk_OUT_LED;
+    */
+    wire ClkCycle;
     
      One_Cycle one_cycle(
         .clk(clk),
         .reset(reset),
+        /*
         .digit_control(digit_control),
         .SyscallDisplay(SyscallDisplay),
         .CLK(CLK),
@@ -49,11 +53,13 @@ module OneCycle_tb(
         .DigitOut(DigitOut),
         .Cycle_count(Cycle_count),
         .test(test),
-        .ClkCycle(ClkCycle),
+        
         .CLK_OUT_LED(CLK_OUT_LED),
         .clk_OUT_LED(clk_OUT_LED)
+        */
+        .ClkCycle(ClkCycle)
      );
-     
+     /*
       always begin
             #1 clk = ~clk;
         end
@@ -67,4 +73,6 @@ module OneCycle_tb(
             #5;
             reset = 1;
         end
+        
+     */
 endmodule

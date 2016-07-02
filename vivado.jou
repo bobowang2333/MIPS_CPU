@@ -2,85 +2,111 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Fri Jul 01 18:31:46 2016
-# Process ID: 4016
-# Log file: C:/UART/lab1/one_cycle/vivado.log
-# Journal file: C:/UART/lab1/one_cycle\vivado.jou
+# Start of session at: Sat Jul 02 02:25:20 2016
+# Process ID: 2300
+# Log file: C:/One_Cycle_Streamline/one_cycle_pipeline/vivado.log
+# Journal file: C:/One_Cycle_Streamline/one_cycle_pipeline\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/UART/lab1/one_cycle/one_cycle.xpr
+open_project C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.xpr
 launch_simulation
-open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
-source OneCycle_tb.tcl
-close_sim
-launch_simulation
-open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
-source OneCycle_tb.tcl
-restart
-run 40 us
-close_sim
-launch_simulation
-open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
-source OneCycle_tb.tcl
-synth_design -rtl -name rtl_1
-close_sim
-launch_simulation
-open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
-source OneCycle_tb.tcl
-restart
-run 50 us
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-open_run impl_1
-open_hw
-connect_hw_server
-open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
-set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
 launch_simulation
 launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top One_Cycle [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top OneCycle_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IF_ID_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top OneCycle_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+remove_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/ID_EX_tb.v
+remove_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/IF_ID_tb.v
+remove_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/ID_EX.v
+remove_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/IF_ID.v
+import_files -norecurse {C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/EX_MEM.v C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/IF_ID.v C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/ID_EX.v C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/MEM_WB.v}
+remove_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/EX_MEM_tb.v
+remove_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/MEM_WB_tb.v
+launch_simulation
+remove_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/One_Cycle.v
+remove_files -fileset sim_1 C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/OneCycle_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ClkDiv_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+remove_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/imports/new/IF_ID.v
+remove_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/imports/new/ID_EX.v
+remove_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/imports/new/MEM_WB.v
+remove_files C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/imports/new/EX_MEM.v
+launch_simulation
+import_files -force -norecurse C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/IF_ID.v
+launch_simulation
+import_files -force -norecurse C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/ID_EX.v
+launch_simulation
+import_files -force -norecurse C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/EX_MEM.v
+launch_simulation
+import_files -force -norecurse C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/MEM_WB.v
 launch_simulation
 launch_simulation
-open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
-source OneCycle_tb.tcl
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-close_sim
+import_files -norecurse C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sources_1/new/One_Cycle.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/One_Cycle_Streamline/one_cycle_pipeline/one_cycle.srcs/sim_1/new/OneCycle_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top OneCycle_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
 launch_simulation
-open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
-source OneCycle_tb.tcl
-close_sim
 launch_simulation
-open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
-source OneCycle_tb.tcl
-close_sim
 launch_simulation
-open_wave_config C:/UART/lab1/one_cycle/OneCycle_tb_behav.wcfg
-source OneCycle_tb.tcl
-run 50 us
-run 50 us
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/UART/lab1/one_cycle/one_cycle.runs/impl_1/One_Cycle.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
